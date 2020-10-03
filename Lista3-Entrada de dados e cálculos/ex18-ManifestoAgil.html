@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="nomeUsuario" placeholder="Digite seu nome"> <br>
+    <select name="slcUsuario" id="slcUsuario">
+    <option value="item1">Primeiro item</option>
+    <option value="item2">Segundo item</option>
+    <option value="item3">Terceiro item</option>
+    <option value="item4">Quarto item</option>
+    </select> <br>
+<button onclick="partiu()">#PartiuAgilidade</button> <br>
+<div id="mensagem"></div>
+</body>
+</html>
+<script>
+    function partiu(){
+        mensagem.innerHTML =`Então,${nomeUsuario.value},${slcUsuario.value}`;
+    }
+</script>

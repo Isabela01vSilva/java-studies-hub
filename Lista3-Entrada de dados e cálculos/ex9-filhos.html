@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Quantos filhos você tem: <input type="text" id="filhos"> <br>
+    <button onclick="calcular()">Calcular Auxilio Filhos</button>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    function calcular(){
+        var auxilio = (filhos.value) * 25;
+        mensagem.innerHTML=`Você tem <b>${filhos.value}</b>,logo, seu Auxílio Filhos será de <i>R$${auxilio}`;
+    }
+</script>

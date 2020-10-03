@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Digite seu Salário <input type="text" id="InformandoSalario"><br>
+    <button onclick="calcular()">Calcular Descontos</button>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    function calcular(){
+       var salario = (InformandoSalario.value);
+       var inss = (salario*0.1)/100;
+       var ir = (salario*0.2)/100;
+       var total = inss + ir ;
+       var aposDesc =  salario - total;
+        mensagem.innerHTML+=`Seus descontos são de:<br>`;
+        mensagem.innerHTML+=`INSS:R$${inss}<br>`;
+        mensagem.innerHTML+=`IR:R$${ir}<br>`;
+        mensagem.innerHTML+=`Total de descontos: ${total.toFixed(2)}<br>`;
+        mensagem.innerHTML+=`Seu Salário,após os descontos será de:<u>R$${aposDesc}</u>`;
+       
+    }
+</script>

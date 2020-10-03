@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Nome do aluno <input type="text" id="nome"> <br>
+    Quantidade de aulas totais do curso<input type="text" id="aulas"> <br>
+    Quantidade de aulas faltadas<input type="text" id="faltou"> <br>
+    <button onclick="calculando()">Calcular Frequencia</button> <br>
+    <div id="mensagem"></div> <br>
+    <div id="porcentagem"></div>
+</body>
+</html>
+<script>
+    function calculando(){
+        var faltas = (faltou.value);
+        var aulasDadas = (aulas.value);
+        var frequencia = ((aulasDadas-faltas)/aulasDadas)*100;
+        mensagem.innerHTML= `<span style=color:blue>Olá,${nome.value}! Sua frequencia foi de</span><span style=color:green><b> ${frequencia.toFixed(0)}%</b></span>`;
+        porcentagem.style.height ="20px";
+        porcentagem.style.background = "red";
+        porcentagem.style.width = `${frequencia}%`;
+    }
+</script>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id='oracao'>
+        <option value="">-Escolha um trecho-</option>
+        <option value="que eu leve o Amor.">Onde houver Ódio,</option>
+        <option value="que eu leve o Perdão.">Onde houver Ofensa,</option>
+        <option value="que eu leve a União. ">Onde houver Discórdia,</option>
+        <option value=",que eu leve a Fé.">Onde houver Dúvida,</option>
+    </select>
+    <br>
+    <button onclick="BoaObra()">Revelar boa obra</button><br>
+    <div id="mensagem" style="color: green;"></div>
+</body>
+</html>
+<script>
+    function BoaObra(){
+     mensagem.innerHTML=(oracao.value);
+    }
+</script>

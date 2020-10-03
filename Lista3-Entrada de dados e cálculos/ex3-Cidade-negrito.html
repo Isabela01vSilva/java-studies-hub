@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cidade natal</title>
+</head>
+<body>
+    Cidade em que nasceu:<input type="text" id="natal"> <br>
+    Ano em que você nasceu:<input type="text" id="nasc"> <br>
+    <button onclick="cadastrar()">Cadastrar</button> <br>
+    <div id="mensagem"></div>
+    
+</body>
+</html>
+<script>
+    function cadastrar(){
+        mensagem.innerHTML=`Você nasceu na cidade <b>${natal.value}</b> em <u>${nasc.value}</u>`;
+    }
+</script>

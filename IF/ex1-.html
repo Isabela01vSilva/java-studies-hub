@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Quantas latinha de refrigerante toma por dia <input type="text" id="dia"><br>
+    <button onclick="quantos()">Quantos refris?</button> <br>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    function quantos(){
+        var QuantidadeDia =Number(dia.value);
+        var quantidade = 365 *QuantidadeDia;
+
+        if(quantidade >= 500){
+         mensagem.innerHTML+=`Está é a quantidade que vc toma por ano:${quantidade}<br> `;
+         mensagem.innerHTML+=`Cuidado com a diabetes!<br>`;
+        }
+        mensagem.innerHTML+=`Está é a quantidade que vc toma por ano:${quantidade}<br> `;
+    }
+</script>

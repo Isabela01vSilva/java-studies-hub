@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Quantos filhos você tem: <input type="text" id="filhos"> <br>
+    Quantos filhos menores de 10 anos você tem: <input type="text" id="menosdez"><br>
+    Quantos filhos apartir de 10 anos você tem: <input type="text" id="maisdez"><br>
+    <button onclick="calcular()">Calcular Auxilio Filhos</button>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    function calcular(){
+        var menos = (menosdez.value) * 30;
+        var maior = (maisdez.value)*20;
+        var auxilio = menos + maior ;
+
+        mensagem.innerHTML=`  Você tem ${menosdez.value} filhos menores de 10 anos e ${maisdez.value} filhos a partir de 10 anos, logo, seu "Auxílio Filhos" será de R$${auxilio}`;
+    }
+</script>

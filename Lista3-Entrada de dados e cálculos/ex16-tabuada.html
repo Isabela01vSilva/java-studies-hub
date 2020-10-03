@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Informe a tabuada que quer ver:<input type="text" id="valor"><br>
+    <button onclick="calcular()">calculando a tabuada</button><br>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    function calcular(){
+        var n1 = (valor.value)*1;
+        var n2 = (valor.value)*2;
+        var n3 = (valor.value)*3;
+        var n4 = (valor.value)*4;
+        var n5 = (valor.value)*5;
+        var n6 = (valor.value)*6;
+        var n7 = (valor.value)*7;
+        var n8 = (valor.value)*8;
+        var n9 = (valor.value)*9;
+        mensagem.innerHTML +=`${valor.value} X 1 = ${n1}<br>`;
+        mensagem.innerHTML +=`${valor.value} X 2 = ${n2}<br>`;
+        mensagem.innerHTML +=`${valor.value} X 3 = ${n3}<br>`;
+        mensagem.innerHTML +=`${valor.value} X 4 = ${n4}<br>`;
+        mensagem.innerHTML +=`${valor.value} X 5 = ${n5}<br>`;
+        mensagem.innerHTML +=`${valor.value} X 6 = ${n6}<br>`;
+        mensagem.innerHTML +=`${valor.value} X 7 = ${n7}<br>`;
+        mensagem.innerHTML +=`${valor.value} X 8 = ${n8}<br>`;
+        mensagem.innerHTML +=`${valor.value} X 9 = ${n9}<br>`;
+    }
+</script>
