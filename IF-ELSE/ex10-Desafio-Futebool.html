@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Quantidade de partidas um atacante jogou <input type="text" id="QtdPartidas"><br>
+    Quantidade de gols <input type="text" id="QtdGols"><br>
+    <button onclick="atacante()">Estudar atacante</button> <br>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    function atacante(){
+        var partidas = Number(QtdPartidas.value);
+        var gols = Number(QtdGols.value);
+        var media = gols/partidas ;
+
+        if(media <= 0.2){
+            mensagem.innerHTML=`Sua media de gols e partidas foi de ${media.toFixed(1)}<br>`;
+            mensagem.innerHTML += `Melhor mudar de posição`;
+        }
+        else if(media > 0.2 && media < 0.6 ){
+        mensagem.innerHTML=`Sua media de gols e partidas foi de ${media.toFixed(1)}<br>`;
+        mensagem.innerHTML += `Atacante mediano`;
+        }
+        else if(media > 0.6){
+            mensagem.innerHTML=`Sua media de gols e partidas foi de ${media.toFixed(1)}<br>`;
+            mensagem.innerHTML += `Atacante de futuro`;
+        }
+    }
+</script>
