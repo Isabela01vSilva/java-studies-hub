@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Quantidade de hoomens que entrou <input type="text" id="QuantH"><br>
+    Quantidade de Mulheres que entrou <input type="text" id="QuantM"><br>
+    <button onclick="Analisar()">Analisar peso </button> <br>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    function Analisar(){
+        var homem = (Number(QuantH.value))*80;
+        var mulher = (Number(QuantM.value))*60;
+        var peso = homem + mulher;
+        if(peso >= 800){ 
+          mensagem.innerHTML = `Este elevador suporta 800 Kg e o peso estimado desta lotação é de ${peso}kg<br>`;
+          mensagem.innerHTML+=`<span style=color:blue>Será necessário descer alguém para que o elevador se movimente</span>`;
+        }
+        else{
+            mensagem.innerHTML=`"Este elevador suporta 800 Kg e o peso estimado desta lotação é de${peso}kg`;
+        }
+    }
+</script>

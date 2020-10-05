@@ -17,6 +17,12 @@
         var renda =Number(RendaFamilia.value);
         var prestacao =Number(valorPrestacao.value);
         var valor = (prestacao/renda)*100;
-        mensagem.innerHTML=`${valor}`;
+        if(valor >= 30){
+            mensagem.innerHTML=`<b style=color:red>${valor.toFixed(0)}%</b>`; 
+            mensagem.innerHTML+='  Será necessário complementar a renda familiar';
+        }
+        else{
+            mensagem.innerHTML=`${valor.toFixed(0)}`;
+        }
     }
 </script>
