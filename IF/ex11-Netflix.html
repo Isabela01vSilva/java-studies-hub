@@ -6,21 +6,24 @@
     <title>Document</title>
 </head>
 <body>
-   informe a hora que vc entra normalmente na plataforma <input type="text" id="HoraAcesso"> <br>
-   <button oncanplay="ver()">Ver recomendação</button><br>
+   informe a hora que vc entra normalmente na plataforma <input type="text" id="Hora"> <br>
+   <button onclick="ver()">Ver recomendação</button><br>
    <div id="mensagem"></div>
 </body>
 </html>
 <script>
     function ver(){
-        var tempo = Number(HoraAcesso.value);
-        if(tempo > 19){
-           if(tempo < 21){
-            mensagem.innerHTML = `Não é recomendável que você assista sua série favorita no horário ${tempo}`;
-           }
+        var tempo = (Hora.value);
+
+        if(tempo >= "19:00"){
+         if(tempo <="21:00"){
+            mensagem.innerHTML=`Não é recomendável que você assista sua série favorita no horário ${tempo}`;
+         }
+         else {
+            mensagem.innerHTML =`O horário ${tempo} é adequado para assistir sua série favorita!`;
         }
-        else {
-            mensagem.innerHTML=`O horário ${tempo} é adequado para assistir sua série favorita!`;
+        }else {
+            mensagem.innerHTML =`O horário ${tempo} é adequado para assistir sua série favorita!`;
         }
     }
 </script>
