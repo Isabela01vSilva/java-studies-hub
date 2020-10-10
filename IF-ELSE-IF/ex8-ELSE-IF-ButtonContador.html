@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Você já clicou <b id="Numero">0</b> vezes. <div id="mensagem"></div>
+    <button onclick="clicar()">Clicar aqui</button>
+</body>
+</html>
+<script>
+    function clicar(){
+    var vezes = Number(Numero.innerHTML);
+    vezes ++;
+    Numero.innerHTML= vezes;
+    if( vezes < 5){
+    mensagem.innerHTML = " Dedo fraquinho, hein"
+    }else if ( vezes >= 5){
+    mensagem.innerHTML="Dedo bom"
+    }
+    if(vezes >= 11){
+    mensagem.innerHTML = "Gosta de clicar,hein!"
+    }
+    if(vezes >= 15 ){
+    mensagem.innerHTML = " Eita dedo nervoso!"
+    }
+    }
+</script>

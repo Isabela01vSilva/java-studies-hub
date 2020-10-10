@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meses do ano</title>
+</head>
+<body>
+    <select id="Meses" onclick="MesesAno()">
+        <option value="Ms">Meses do ano</option>
+        <option value="Jn">Janeiro</option>
+        <option value="Fv">Fevereiro</option>
+        <option value="Mç">Março</option>
+        <option value="br">Abril</option>
+        <option value="Maio">Maio</option>
+        <option value="jn">Junho</option>
+        <option value="jl">Julho</option>
+        <option value="ag">Agosto</option>
+        <option value="st">Setembro</option>
+        <option value="nov">Novembro</option>
+        <option value="out">Outubro</option>
+        <option value="dz">Dezembro</option>
+    </select><br>
+ <div id="div_clima"></div>
+ <img src="" id="img_clima" width="750px">
+</body>
+</html>
+<script>
+   function MesesAno(){
+        if(Meses.value == 'Jn'){
+            div_clima.innerHTML="Inverno";
+            img_clima.src="https://www.pimpmytrip.it/wp-content/uploads/2018/02/clima-svezia-inverno.jpg";
+            
+        }else if (Meses.value == 'Fv'){ 
+            div_clima.innerHTML="Inverno";
+            img_clima.src="https://www.pimpmytrip.it/wp-content/uploads/2018/02/clima-svezia-inverno.jpg";
+            }
+        else if (Meses.value == 'dz'){
+            div_clima.innerHTML="Inverno";
+            img_clima.src="https://www.pimpmytrip.it/wp-content/uploads/2018/02/clima-svezia-inverno.jpg";
+          
+            }
+        else if (Meses.value == 'Mç' ){
+            div_clima.innerHTML="Primavera";
+            img_clima.src="https://k37.kn3.net/taringa/1/6/2/2/7/0/77/zero_gk/CAF.jpg?2916";
+        }
+        else if(Meses.value == 'br'){
+            div_clima.innerHTML="Primavera";
+            img_clima.src="https://k37.kn3.net/taringa/1/6/2/2/7/0/77/zero_gk/CAF.jpg?2916";
+        }
+        else if(Meses.value == 'Maio'){
+            div_clima.innerHTML="Primavera";
+            img_clima.src="https://k37.kn3.net/taringa/1/6/2/2/7/0/77/zero_gk/CAF.jpg?2916";
+        }
+        else if (Meses.value == 'jn' ){
+            div_clima.innerHTML="Verão";
+            img_clima.src="https://tse1.mm.bing.net/th?id=OIP.DlkCfmNarP1LIBirCV4YKwHaEy&pid=Api&P=0&w=234&h=152";
+        }
+        else if(Meses.value == 'jl'){
+            div_clima.innerHTML="Verão";
+            img_clima.src="https://tse1.mm.bing.net/th?id=OIP.DlkCfmNarP1LIBirCV4YKwHaEy&pid=Api&P=0&w=234&h=152";
+
+        }
+        else if(Meses.value == 'ag'){
+            div_clima.innerHTML="Verão";
+            img_clima.src="https://tse1.mm.bing.net/th?id=OIP.DlkCfmNarP1LIBirCV4YKwHaEy&pid=Api&P=0&w=234&h=152";
+
+        }
+        else if(Meses.value == 'out'){
+            div_clima.innerHTML="Outono";
+            img_clima.src="https://tse4.mm.bing.net/th?id=OIP.heHcI-csG2NFANr0L6CFQgHaE8&pid=Api&P=0&w=280&h=188";
+        }
+        else if(Meses.value == 'nov'){
+            div_clima.innerHTML="Outono";
+            img_clima.src="https://tse4.mm.bing.net/th?id=OIP.heHcI-csG2NFANr0L6CFQgHaE8&pid=Api&P=0&w=280&h=188";
+        }
+        else if (Meses.value == 'st' ){
+            div_clima.innerHTML="Outono";
+            img_clima.src="https://tse4.mm.bing.net/th?id=OIP.heHcI-csG2NFANr0L6CFQgHaE8&pid=Api&P=0&w=280&h=188";
+        }
+    }
+</script>
