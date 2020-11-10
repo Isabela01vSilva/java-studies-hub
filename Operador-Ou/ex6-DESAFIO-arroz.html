@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select  id="escolha">
+        <option value="nada">Qual o tipo de arroz?</option>
+        <option value="int">Integral</option>
+        <option value="bra">Branco</option>
+    </select><br>
+    Quanto tempo de cozimento?(em minutos) <input type="text" id="tempo"><br>
+    Quantidade de sal?(em gramas) <input type="text" id="sal"><br>
+    <button onclick="avaliar()">Avaliar Arroz</button><br>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    function avaliar(){
+        if(escolha.value == "bra" &&  tempo.value <= "00:10" && sal.value <= "10" || escolha.value == "int" && tempo.value <= "00:20" && sal.value <= "15"){
+            mensagem.innerHTML = "Arroz perfeito";
+        }else{
+            mensagem.innerHTML = "Seu arroz não está perfeito";
+        }
+    }
+</script>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid19</title>
+</head>
+<body>
+    <input type="text" id="rendaindividual"><br>
+    <input type="text" id="rendafamilia"><br>
+    <button onclick="beneficio()">Terei o beneficio</button><br>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    function beneficio(){
+    if(rendaindividual.value == ""  || rendafamilia.value == "" ){
+        mensagem.innerHTML ="Preencha os campos a cima!"
+    }
+    else if(rendaindividual.value <= 2000 || rendafamilia.value <= 3000){
+         mensagem.innerHTML="Você tem direito ao auxilio";
+    }else{
+        mensagem.innerHTML="Você não tem direito ao auxilio";
+     }
+    }
+</script>

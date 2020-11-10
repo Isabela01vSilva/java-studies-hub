@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="escolha">
+        <option value="nada">Escolha o modo de pagamento</option>
+        <option value="din">Dinheiro</option>
+        <option value="deb">Cartão de débito</option>
+        <option value="cre">Cartão de Crédito</option>
+        <option value="bo">Boleto</option>
+    </select><br>
+    <button onclick="compra()">Analisar compra</button><br>
+   <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    function compra(){
+        if(escolha.value == "din" || escolha.value == "deb"){
+            mensagem.innerHTML="Você terá que pagar a vista"
+        }
+        else if(escolha.value == "cre" || escolha.value == "bo"){
+            mensagem.innerHTML="Pagameno poderá ser parcelado";
+        }else if(escolha.value == "nada"){
+            mensagem.innerHTML = "Escolha um modo de pagamento"
+        }
+    }
+</script>

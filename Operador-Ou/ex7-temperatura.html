@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    temperatura<input type="text" id="temp"><br>
+    Umidade <input type="text" id="umidade">
+    <button onclick="clima()">Avaliar Clima</button><br>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    function clima(){
+     if(umidade.value < 0 || umidade.value > 100){
+         alert("Valor de umidade invalido");
+         mensagem.innerHTML="";
+     }else if(umidade.value <= 60 && temp.value >= 22 ||umidade.value <= 60 &&  temp.value >= 23){
+         mensagem.innerHTML = "Clima agradavel";
+     }else{
+        mensagem.innerHTML = "Clima desconfortavel";  
+     }
+}
+</script>
