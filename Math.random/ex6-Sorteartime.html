@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <button onclick="time()">Sortear Time</button>   <br>
+  <img src="" id="imgtime" width="150px">
+</body>
+</html>
+<script>
+    var resul;
+    function time(){
+     resul = Math.trunc(Math.random()* 5)
+     if(resul == 1){
+         imgtime.src="https://http2.mlstatic.com/D_NQ_NP_698055-MLB29715657655_032019-O.jpg";
+     }else if(resul == 2){
+         imgtime.src="https://i.pinimg.com/originals/01/da/17/01da178467b71f952918106908c69b33.png"
+     }else if(resul == 3){
+         imgtime.src="https://s2.glbimg.com/Qis7Tps0xuiVhHB8oILzTN20kns=/696x390/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2019/9/J/JE2YdaSwWWkHYyvDhSIw/escudosantos02.jpg"
+     }else if(resul == 4){
+         imgtime.src="https://http2.mlstatic.com/D_NQ_NP_778536-MLB31671307546_082019-O.jpg"
+     }
+    }
+</script>

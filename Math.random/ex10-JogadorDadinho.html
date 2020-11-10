@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Jogador 1 : <b id="jogador1">0</b><br>
+    Jogador 2 : <b id="jogador2">0</b><br>
+    Empate : <b id="empate">0</b><br>
+    <button onclick="jogar()">Jogar</button><br>
+     dadinho 1:<div id="dd1"></div><br>
+    dadinho 2:<div id="dd2"></div><br>
+   <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    var dado1 = 0;
+    var dado2 = 0;
+    var empa = 0;
+    function jogar(){
+    var resul1 = parseInt(Math.random() * 6)+1;
+    var resul2 = parseInt(Math.random() * 6)+1;
+    if(resul1 > resul2){
+        dado1 ++;
+        dd1.innerHTML = `${resul1}`;
+        dd2.innerHTML = `${resul2}`;
+        mensagem.innerHTML= `O jogador 1 está vencendo`;
+        jogador1.innerHTML = `${dado1}`;
+    }else if(resul1 < resul2){
+        dado2 ++;
+        dd1.innerHTML = `${resul1}`;
+        dd2.innerHTML = `${resul2}`;
+        mensagem.innerHTML= `O jogador 2 está vencendo`;
+        jogador2.innerHTML = `${dado2}`;
+    }else if(resul1 == resul2){
+        empa ++;
+        dd1.innerHTML = `${resul1}`;
+        dd2.innerHTML = `${resul2}`;
+        mensagem.innerHTML= `Empate`;
+        empate.innerHTML = `${empa}`;
+    }
+}
+</script>

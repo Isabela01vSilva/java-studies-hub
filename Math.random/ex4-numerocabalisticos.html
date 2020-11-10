@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Sorteio de números entre 1 e 15</h2>
+    <button onclick="cabalistico()">Quero um cabalístico</button><br>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    function cabalistico(){
+        var resul = parseInt((Math.random()* 15)+1);
+        if(resul == 3 || resul == 4 || resul == 7 || resul == 10 || resul == 12){
+                   mensagem.innerHTML = `${resul}<br>`;
+                   mensagem.innerHTML+=`Eu S2 números cabalísticos!`;
+        }else{
+            mensagem.innerHTML = `${resul}<br>`;
+            mensagem.innerHTML+=`Ah, me dá um número bom na próxima!`;
+        }
+    }
+</script>
