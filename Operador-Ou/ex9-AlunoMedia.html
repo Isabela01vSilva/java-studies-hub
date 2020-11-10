@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Digite sua nota <input type="text" id="nota"><br>
+    Digite sua Frequencia <input type="text" id="frequencia"><br>
+    <button onclick="analisar()">Analisar aluno</button><br>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    function analisar(){
+        if(nota.value < 0 || nota.value > 10){
+        mensagem.innerHTML="";
+        alert("Você já viu nota menor que 0? OU maior que 10?")
+        }else if(frequencia.value < 0 || frequencia.value > 100){
+        mensagem.innerHTML="";
+        alert("Você já viu frequencia menor que 0? OU maior que 100?")
+        }
+        else if(nota.value >= 0 && nota.value < 6){
+        mensagem.innerHTML="Aluno ficou abaixo da média<br>";
+        }
+        else if(nota.value >= 6 && nota.value < 8 ){
+        mensagem.innerHTML="Aluno ficou da média<br>";
+        }
+        else if(nota.value >= 8 && nota.value <= 10){
+        mensagem.innerHTML="Aluno acima da média<br>";
+        }  
+         if(frequencia.value >= 75){
+        mensagem.innerHTML+="Aluno aprovado por frequência<br>";
+        }else if(frequencia.value < 75){
+        mensagem.innerHTML+="Aluno reprovado por frequência<br>";
+        } 
+        if(frequencia.value == "" || nota.value == "") {
+            mensagem.innerHTML = "Preencha os campos";
+        }
+    }
+</script>

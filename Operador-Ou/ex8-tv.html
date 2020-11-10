@@ -8,18 +8,29 @@
 <body>
     <select  id="marca">
         <option value="nada">Qual a marca de tv?</option>
-        <option value="sam">Samsung</option>
+        <option value="samsung">Samsung</option>
         <option value="lg">LG</option>
-        <option value="mon">Mondial</option>
-        <option value="bri">BRITANIA</option>
+        <option value="mondial">Mondial</option>
+        <option value="britania">BRITANIA</option>
     </select><br>
     O preço da tv:<input type="text" id="valor"><br>
-    <button onclick="analizar()">Analizar compra</button><br>
+    <button onclick="analisar()">Analisar compra</button><br>
     <div id="mensagem"></div>
 </body>
 </html>
 <script>
-    function analizar(){
-        
+    function analisar(){
+        if(valor.value < 800 ){
+            mensagem.innerHTML="Tv fora da faixa de preço<br>Preço baixo demais!"; 
+        }else if( valor.value > 2000){
+            mensagem.innerHTML="Tv fora da faixa de preço<br>Tv cara demais,infelizmente"; 
+        }
+        else if(marca.value == "mondial" || marca.value == "britania"){
+            mensagem.innerHTML= "Marca não confiavel"
+        }else if(marca.value == "lg" || marca.value == "samsung"){
+            mensagem.innerHTML="Essa tv pode entrar na sua lisa!"
+        }else if(marca.value =="nada"){
+            mensagem.innerHTML="Escolha uma marca"
+        }
     }
 </script>
