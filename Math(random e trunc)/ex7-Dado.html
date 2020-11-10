@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ <center>
+<body>
+    <button onclick="dado()">Jogar dado </button> <br>
+    <img src="" alt="" style="height:250px" id="img_dado"> 
+</center>
+</body>
+</html>
+<script>
+    function dado(){
+        var aleatoria = parseInt(Math.random() * 6)+1;
+        if (aleatoria == 1 ) {
+            img_dado.src='https://i.pinimg.com/236x/21/8d/0d/218d0d64ad210eeeb2e0d74fb71b56aa.jpg';
+        }
+        else if (aleatoria == 2 ) {
+            img_dado.src='https://image.flaticon.com/icons/png/512/0/2.png';
+        }
+        else if (aleatoria == 3 ) {
+            img_dado.src='https://tse1.mm.bing.net/th?id=OIP.y1QzlQIXRSi7kgrBYM1S1gHaHa&pid=Api&P=0&w=300&h=300';
+        }
+        else if (aleatoria == 4 ) {
+            img_dado.src='https://image.flaticon.com/icons/png/512/0/963.png';
+        }
+        else if (aleatoria == 5 ) {
+            img_dado.src='https://image.freepik.com/free-icon/dice-with-six-sides_318-9619.jpg';
+        }
+        else {
+            img_dado.src='https://tse3.mm.bing.net/th?id=OIP.ibFqTRCSjIlFq-P2yJPw2AHaHE&pid=Api&P=0&w=168&h=161';
+        }
+    }
+</script>

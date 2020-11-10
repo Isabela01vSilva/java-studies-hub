@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Sorteando numero de 0 a 9</h2>
+    Números pares: <b id="pares"></b><br>
+    Números ímpares: <b id="impar"></b><br>
+    <button onclick="number()">Sortear número</button><br>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    var result;
+    var numimpar=0;
+    var numpar=0;
+    function number(){
+         result =  Math.trunc((Math.random() * 10)) ;
+        mensagem.innerHTML = `${result.toFixed(2)} <br>`; 
+        if((result % 2) == 0){
+            mensagem.innerHTML = `${result} é par`;
+            pares.innerHTML = `${++ numpar}`;
+        }
+        else {
+            mensagem.innerHTML = `${result} é impar`;
+            impar.innerHTML = `${++ numimpar}`;
+        }
+}
+</script>
