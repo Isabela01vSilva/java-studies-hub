@@ -15,12 +15,16 @@
 <script>
     function atazanar(){
         var contador = 1;
-        var elefante = "incomoda"; 
         mensagem.innerHTML="";
         while(contador++ < qtdelefante.value){
-        elefante += qtdelefante.value;
+            var elefante = 0; 
             mensagem.innerHTML += "1 elefante incomoda muita gente!<br>";
-            mensagem.innerHTML += `${contador} elefantes,${elefante}<br><br>`;
+            mensagem.innerHTML += `${contador} elefantes,`;
+          
+            while(elefante++ < contador){
+                mensagem.innerHTML += "incomoda,";
+            }
+                mensagem.innerHTML += "muito mais <br><br>"
         }
     }
 </script>
