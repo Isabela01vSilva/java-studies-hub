@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Quantos dias vc faz musculação? <input type="text" id="dias"><br>
+    <button onclick="rotinamensal()">Exibir rotina mensal</button><br>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    function rotinamensal(){
+        var contador = 0;
+        mensagem.innerHTML="";
+        while(contador < 30){
+            ++ contador;
+            if(contador % dias.value == 1){
+                mensagem.innerHTML += `Dia ${contador} -<b>Musculação </b><br>`;
+            }else{
+                mensagem.innerHTML += `Dia ${contador} -  Comer,dormir,etc...<br>`;
+            }
+        }
+        }
+</script>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Ghost,dooutro lado da vida</h2>
+    <input type="text" id="qtdelefante"><br>
+    <button onclick="atazanar()">Atazanar a médium</button><br>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    function atazanar(){
+        var contador = 1;
+        var elefante = "incomoda"; 
+        mensagem.innerHTML="";
+        while(contador++ < qtdelefante.value){
+        elefante += qtdelefante.value;
+            mensagem.innerHTML += "1 elefante incomoda muita gente!<br>";
+            mensagem.innerHTML += `${contador} elefantes,${elefante}<br><br>`;
+        }
+    }
+</script>
