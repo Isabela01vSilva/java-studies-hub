@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    Digite os lugares para onde vc já viajou <input type="text" id="viajar"><br>
+    <button onclick="cadastrar()">Cadastrar local</button><br>
+    Digite apenas um número indicando o local para onde você viajou <br>
+    <input type="text" id="numeroviagem"><br>
+    <button onclick="relembrar()">Relembrar Viagem</button>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    var tipoviagem = [];
+    function cadastrar() {
+        tipoviagem.push(viajar.value);
+    }
+    function relembrar() {
+      tipoviagem.length;
+      mensagem.innerHTML= `Viagem: ${tipoviagem[numeroviagem.value -1]}`
+       if(tipoviagem.length < numeroviagem.value ){
+          mensagem.innerHTML = `Você não fez uma ${numeroviagem.value}ª viagem!`;    
+        }
+        
+    }
+</script>
