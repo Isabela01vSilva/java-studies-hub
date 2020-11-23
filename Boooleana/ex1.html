@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    digite seu login <input type="text" id="login"><br>
+    digite sua senha <input type="text" id="senha"><br>
+    <button onclick="cadastrar()">Cadastrar</button>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    function cadastrar(){
+        var acesso = login.value == 'aidimin';
+        var password = senha.value == 'seinha';
+        if(acesso && password){
+            mensagem.innerHTML = '<span style=color:blue> Usurio autenticado com sucesso!</span>'
+        }
+        else if(!acesso && !password){
+            mensagem.innerHTML = '<span style=color:red> Seu Login est invalido</span><br><span style=color:red> Sua senha esta invalida!</span><br>';
+        }
+        else if(!password){
+            alert("Procure o suporte");
+        }
+        else if(!acesso){
+            mensagem.innerHTML= '<span style=color:red> Seu Login est invalido</span>';
+    }
+}  
+</script>
