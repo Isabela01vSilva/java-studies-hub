@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Informe quantos depositos vc fez no banco 
+    <input type="text" id="deposito"><br>
+    Informe o valor dos depositos 
+    <input type="text" id="valor"><br>
+    <button onclick="grana()">Acompanhar grana</button><br>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    function grana(){
+        for(var contador = 1 ; contador <= deposito.value ; contador++){
+            var mat = valor.value * 2;
+         for(var conta = valor.value ; conta <=  mat ; conta++){
+            mensagem.innerHTML += 
+            `${contador} Mes:R$ ${conta} <br>`;
+           }
+        }
+    }
+</script>

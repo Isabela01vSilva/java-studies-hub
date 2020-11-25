@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Quantas Coca-Colas você já bebeu na vida?<input id="qtd"><br>
+    <button onclick="mostrar()">Ver a quantidade</button><br>
+    <div id="img_coca"></div>
+</body>
+</html>
+<script>
+    function mostrar() {
+        img_coca.innerHTML = "";
+        for (var contador = 0; contador < qtd.value; contador++) {
+        img_coca.innerHTML += '<img src="cocacola.jpg" style="width: 50px;"> ';  
+        }
+    }
+</script>

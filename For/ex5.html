@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="conte()">Conte de 5 em 5</button><br>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    function conte(){
+        var contador ;
+        for(contador = 0 ; contador <= 200 ; contador ++ ){        
+        if(contador % 5 == 0){ 
+        mensagem.innerHTML += `${contador}<br>`;
+       } 
+    }
+ }
+</script>

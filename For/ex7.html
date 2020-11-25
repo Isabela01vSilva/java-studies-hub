@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Frase que vc quer repetida <input type="text" id="frase"> <br>
+    Digite o numero de vezes que vc quer que apareça <input type="text" id="vezes"><br>
+    <button onclick="diga()">Diga Algo sobre a Quarentena</button><br>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    function diga(){
+        mensagem.innerHTML='';
+        for(var contador = 1; contador <= vezes.value ; ++contador ){
+            mensagem.innerHTML += `${contador}.${frase.value}<br>`
+        }
+    }
+</script>

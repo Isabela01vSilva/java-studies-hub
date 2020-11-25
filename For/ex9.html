@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Quantas xicaras de coffe com leite vc ja bebe a vida <input type="text" id="xicaras"><br>
+    <button onclick="ver()">Ver a quantidade</button><br>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    function ver(){
+        for(var contador = 1 ; contador <= xicaras.value ; contador ++){
+            mensagem.innerHTML = `${contador} colher de leite e ${contador * 2} de café`;
+        }
+    }
+</script>
