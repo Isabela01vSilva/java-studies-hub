@@ -18,9 +18,9 @@
     function grana(){
         var conta = 0;
         mensagem.innerHTML= '';
-        for(var contador = 1 ; contador < deposito.value ; contador++){
+        for(var contador = 1 ; contador <= deposito.value ; contador++){
             conta += Number(valor.value);
-           mensagem.innerHTML +=  `${contador} Mes:R$ ${conta} <br>`;
-        }
+                contador % 3 == 0 ?  mensagem.innerHTML +=  `<b>${contador} Mes:R$ ${conta * 101}</b> <br>`:mensagem.innerHTML +=  `${contador} Mes:R$ ${conta} <br>`;
+    }
 }
 </script>
