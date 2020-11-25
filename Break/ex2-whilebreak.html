@@ -13,9 +13,11 @@
 </html>
 <script>
     function sorte(){
-        for(var contador = 1 ; contador <= 20 ; contador ++){
+        var contador = 0;
+        while(contador <= 20){
+            contador ++
             var sorteio = parseInt(Math.random() * 101);
-          if(number.value == sorteio){
+        if(number.value == sorteio){
               mensagem.innerHTML = `Muito bem, você é uma pessoa de sorte! Seu número saiu no ${contador}º sorteio`;
              break;
         } 
