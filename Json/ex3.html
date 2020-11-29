@@ -14,20 +14,25 @@
 </body>
 </html>
 <script>
-     var contador_mais = 0 ;
-     var contador_menos = 0;
-     var contando_saques = 0;
-    function depositar(){
-     contador_mais += 100;
-     contando_saques += 1;
-     saldo.innerHTML = `${contador_mais}`;
-     depositos.innerHTML = `${contando_saques}`;
+    var contabancaria ={
+        valor_saldo:0,
+        valor_deposito:0,
+        valor_saques:0
     }
+    function depositar(){
+    contabancaria.valor_saldo = contabancaria.valor_saldo + 100;
+    contabancaria.valor_deposito ++;
+    saldo.innerHTML = `${contabancaria.valor_saldo}`;
+    depositos.innerHTML = `${contabancaria.valor_deposito}`;
+}
     function sacar(){
-        var contabancaria ={
-        sld : saldo.innerHTML,
-        dpt : depositos.innerHTML ,
-        sqs : saques.innerHTML
-     } 
+    contabancaria.valor_saldo = contabancaria.valor_saldo - 20;
+    contabancaria.valor_saques ++;
+    saques.innerHTML = `${contabancaria.valor_saques}`;
+    if(contabancaria.valor_saldo <= 0){
+        saldo.innerHTML = `<u style= color:red>${contabancaria.valor_saldo}</u>`;
+    }
+    else{saldo.innerHTML = `${contabancaria.valor_saldo}`;
+    }
     }
 </script>
