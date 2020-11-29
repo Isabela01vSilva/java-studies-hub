@@ -24,6 +24,11 @@
     contabancaria.valor_deposito ++;
     saldo.innerHTML = `${contabancaria.valor_saldo}`;
     depositos.innerHTML = `${contabancaria.valor_deposito}`;
+    if(contabancaria.valor_saldo <= 0){
+        saldo.innerHTML = `<u style= color:red>${contabancaria.valor_saldo}</u>`;
+    }
+    else{saldo.innerHTML = `${contabancaria.valor_saldo}`;
+    }
 }
     function sacar(){
     contabancaria.valor_saldo = contabancaria.valor_saldo - 20;

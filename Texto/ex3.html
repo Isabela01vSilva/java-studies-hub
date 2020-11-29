@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Digite seu nome <input type="text" id="nome" onkeyup="analisar_textos()"><br>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    function analisar_textos(){
+        mensagem.innerHTML = '';
+        var campo_nome = nome.value;
+        campo_nome = campo_nome.trimStart() && campo_nome.trimEnd();
+        if(campo_nome.length == 0 ){
+           mensagem.innerHTML = 'Nome invalido';
+        }
+        else{ 
+            mensagem.innerHTML ='Nome OK';
+        }
+    }
+</script>

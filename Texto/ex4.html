@@ -14,7 +14,7 @@
     function analisar_textos(){
         mensagem.innerHTML = '';
         var campo_email = email.value;
-       if( campo_email.includes('@') >= 1){
+       if( campo_email.includes('@') >= 1 && campo_email.includes('.') >= 1 && campo_email.length >= 7){
         mensagem.innerHTML = 'Email valido';
        }
        else{

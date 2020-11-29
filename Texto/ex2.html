@@ -6,19 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-    Digite um email <input type="text" id="email" onkeyup="analisar_textos()"><br>
+    Digite seu nome <input type="text" id="nome" onkeyup="analisar_textos()"><br>
     <div id="mensagem"></div>
 </body>
 </html>
 <script>
     function analisar_textos(){
         mensagem.innerHTML = '';
-        var campo_email = email.value;
-       if( campo_email.includes('@') >= 1){
-        mensagem.innerHTML = 'Email valido';
-       }
-       else{
-        mensagem.innerHTML = 'Email invalido';
-       }
+        var campo_nome = nome.value;
+        if(campo_nome.length >= 10){
+            mensagem.innerHTML = 'Nome valido';
+        }
+        else{
+            mensagem.innerHTML = 'Nome invalido';
+        }
     }
 </script>
