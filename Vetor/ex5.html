@@ -14,13 +14,12 @@
 </html>
 <script>
     var aluno = [];
-    var conta = 0;
     function cadastrar(){
     aluno.push(nomealuno.value);
     nomealuno.value="";
-    
-    while(aluno.length-1 >){
-        mensagem.innerHTML += `${aluno}<br>`;
+    mensagem.innerHTML = '';
+    for(var contador = aluno.length -1 ; contador >= 0 ; contador --){
+        mensagem.innerHTML +=  `${aluno[contador]} <br>`;
     }
 }
 </script>

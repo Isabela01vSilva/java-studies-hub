@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Informe o nome do time <input type="text" id="nome1"><br>
+    Informe o numero de vitorias: <input type="text" id="vt1"><br>
+    Informe o numero de empates: <input type="text" id="emp1"><br>
+    Informe o numero de derrotas: <input type="text" id="drt1"><br>
+    <br><br>
+    Informe o nome do time <input type="text" id="nome2"><br>
+    Informe o numero de vitorias: <input type="text" id="vt2"><br>
+    Informe o numero de empates: <input type="text" id="emp2"><br>
+    Informe o numero de derrotas: <input type="text" id="drt2"><br>
+    <br><br>
+    <button onclick="comparar()">Comparar campanhas</button><br>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    function comparar(){
+        var pontos1 ={
+            vitoria : Number(vt1.value) * 3,
+            empate : Number(emp1.value) * 1,
+            derrota : Number(drt1.value)* 0
+        }
+        var pontos2 ={
+            vitoria : Number(vt2.value) * 3,
+            empate : Number(emp2.value) * 1,
+            derrota : Number(drt2.value)* 0
+        }
+        pontos1.conta = pontos1.vitoria + pontos1.empate + pontos1.derrota;
+        pontos2.conta = pontos2.vitoria + pontos2.empate + pontos2.derrota;
+        mensagem.innerHTML =
+         ` O time <b>${nome1.value}</b> terminou o campeonato com <b>${pontos1.conta}</b> pontos<br>
+           O time <b>${nome2.value}</b> terminou o campeonato com <b>${pontos2.conta}</b> pontos<br>`;
+
+    }
+</script>

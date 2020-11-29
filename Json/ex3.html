@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Saldo : R$ <b id="saldo"></b><br>
+    Depositos: <b id="depositos"></b><br>
+    Saques: <b id="saques"></b><br><br>
+    <button onclick="depositar()">Depositar 100</button><button onclick="sacar()">Sacar 20</button><br>
+
+</body>
+</html>
+<script>
+     var contador_mais = 0 ;
+     var contador_menos = 0;
+     var contando_saques = 0;
+    function depositar(){
+     contador_mais += 100;
+     contando_saques += 1;
+     saldo.innerHTML = `${contador_mais}`;
+     depositos.innerHTML = `${contando_saques}`;
+    }
+    function sacar(){
+        var contabancaria ={
+        sld : saldo.innerHTML,
+        dpt : depositos.innerHTML ,
+        sqs : saques.innerHTML
+     } 
+    }
+</script>

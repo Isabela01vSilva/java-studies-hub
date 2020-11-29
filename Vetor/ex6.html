@@ -7,16 +7,28 @@
     <title>Document</title>
 </head>
 <body>
-    notas <input type="text" id="nota"><br>
-    <button onclick="cadastrar()">cadastrar nota</button>
-    A partir de qual nota vc quer ver <input type="text" id="apartirnota"><br>
+    Digite a notas: <input type="text" id="nota"><br>
+    <button onclick="cadastrar()">Cadastrar nota</button>
+    A partir de qual nota vc quer ver? <input type="text" id="apartirnota"><br>
     <button onclick="rever()">Rever as notas</button>
     <div id="mensagem"></div>
 </body>
 </html>
 <script>
     var aluno = [];
-function cadastrar(){
-
+    var notas = [];
+    function cadastrar(){
+    aluno.push(nota.value);
+    nota.value = '';
+    }
+    function rever(){
+        notas.push(apartirnota.value);
+        var notasmaiores = aluno >= notas;
+        var notasmenores = aluno <= notas;
+        var media = (aluno.length)/(aluno.length);
+        mensagem.innerHTML =  
+        `Foram cadastras ${notasmaiores [notas]} notas maiores que 
+        ${notasmenores[notas]} e a 
+        média dessas notas é ZZ,Z`;
 }
 </script>
