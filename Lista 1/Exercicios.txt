@@ -1,0 +1,79 @@
+Lista 01 - Nivelamento Java
+Crie um projeto chamado lista-01, e para cada exercício crie uma classe conforme enunciado. Exercício 01 - Calculadora Simples
+Crie uma classe chamada “Calculadora” Java que:
+A. Seja executável (possui o método main). B. Solicite um número para o usuário(número real). C. Solicite outro número para o usuário(número real). D. Calcule e exiba a soma dos dois números digitados. E. Calcule e exiba a subtração do primeiro número pelo segundo. F. Calcule e exiba a multiplicação do primeiro número pelo segundo. G. Calcule e exiba a divisão do primeiro número pelo segundo. Exemplo:
+Digite um número:
+10
+Digite outro número:
+4
+Resultado da soma:
+14.0
+Resultado da subtração:
+6.0
+Resultado da multiplicação:
+40.0
+Resultado da divisão:
+2.5
+Exercício 02 - Idade
+Crie uma classe chamada “Idade” Java que:
+A. Seja executável. B. Solicite que o usuário digite o seu nome. C. Em seguida, o programa deverá exibir a mensagem: “Olá, Fulano! Qual o ano de seu nascimento?”. D. Depois, o programa deverá exibir: “Em 2030 você terá 25 anos” (sendo Fulano o nome digitado pelo usuário e xx a idade
+do usuário). Exemplo:
+Qual é o seu nome?
+Maria
+Olá, Maria! Qual o ano de seu nascimento?
+1995
+Linguagem de Programação
+2
+Em 2030 você terá 35 anos. Exercício 03 - Elevador
+Crie uma classe chamada “Elevador” Java que:
+A. Seja executável. B. Solicite ao usuário o limite de peso de um elevador (número real). C. Solicite ao usuário o limite de pessoas em um elevador (número inteiro). D. Solicite ao usuário o peso da 1ª pessoa que entrou no elevador (número real). E. Solicite ao usuário o peso da 2ª pessoa que entrou no elevador (número real). F. Solicite ao usuário o peso da 3ª pessoa que entrou no elevador (número real). Ao final, exiba uma frase assim: "Entraram 3 pessoas no elevador, no qual cabem X pessoas. O peso total no elevador é de Y, sendo que ele suporta Z". (onde X é o 2º valor lido no programa, Z o 1º e Y é a soma dos pesos das 3 pessoas)
+Exercício 04 - Cálculo de Troco
+Crie uma classe chamada “CalculadoraTroco” Java que:
+A. Seja executável. B. Solicite o valor unitário de um produto. C. Solicite a quantidade vendida. D. Solicite o valor pago pelo cliente. E. Calcule e exiba o troco com a seguinte frase. "Seu troco será de R$ X" Exercício 05 - Calculadora de Salário
+Crie uma classe chamada “CalculadoraSalario” Java que:
+A. Seja executável. B. Solicite que o usuário digite o seu salário. C. Solicite a porcentagem de imposto que o usuário deverá pagar. D. Exiba o valor do salário líquido. Por exemplo:
+Se o salário for 1000,00, e o imposto for de 20%, o salário líquido será 800,00.
+Linguagem de Programação
+3
+Exercício 06 - Média Notas
+Crie uma nova classe (Class) no projeto e:
+a) Ela deve ser executável
+b) Solicite o nome e duas notas ao usuário. As notas são números reais. c) Calcule a média entre as notas (Dica: é da mesma forma como se faz em JavaScript)
+d) Exiba uma frase como esta: "Olá, NOME. Sua média foi de MEDIA" e) Use Interpolação com 1 casa decimal para a média
+Exercício 07 - Login
+Crie uma classe Java que:
+a) Seja executável
+b) Solicite o login do cliente
+c) Solicite a senha do cliente
+d) Solicite a quantidade de vezes que o usuário aceita errar a senha antes do bloqueio
+e) Exiba uma frase como esta: "Seu login é L e sua senha é S. Você tem T tentativas antes de ser bloqueado" Use interpolação
+Exercício 08 - Bolsa Filhos
+No país “Quisito” existe um benefício social chamado "Bolsa Filhos". Crie uma classe
+Java que:
+a) Solicite ao usuário quantos filhos de 0 a 3 anos possui. b) Solicite ao usuário quantos filhos de 4 a 16 anos possui. c) Solicite ao usuário quantos filhos de 17 a 18 anos possui. d) Calcule o valor da Bolsa, sendo que o governo paga: * R$25,12 por filhos com menos de 4 anos
+* R$15,88 por filhos entre 4 e 16 anos
+* R$12,44 por filhos entre 17 e 18 anos
+e) Exiba uma frase como esta: "Você tem um total de T filhos e vai receber R$B de bolsa" Use interpolação com 2 casas decimais para o valor da bolsa
+Linguagem de Programação
+4
+Exercício 09 - Salário Líquido
+Crie uma classe Java que ajude a Maria Fobada a saber quanto será seu salário líquido. a) A classe deve ser executável
+b) O programa solicita o salário bruto
+c) O programa calcula o desconto do INSS, que é sempre de 10% sobre o bruto
+d) O programa calcula o desconto de IR, que é sempre de 20% sobre o bruto
+e) O programa pergunta quanto custa a condução diária só de ida da casa para o trabalho. O desconto de VT é sempre o que o usuário gasta. Assim, calcula-se assim: Valor de
+condução ida x 2 x 22. f) Calcule o salário líquido, que é o bruto menos os descontos de INSS, IR e VT
+g) Exibam, usando interpolação e com os valores numéricos com 2 casas decimais, uma
+frase como esta: "Seu bruto é R$A, tem um total de R$B em descontos e receberá um líquido de R$C" Exercício 10 - Calculadora de calorias
+Jorge Abe Estado começou a se exercitar e deseja saber quantas calorias vai perder nos
+exercícios. Crie uma classe Java que:
+a) Seja executável
+b) Solicite ao usuário o tempo, em minutos (valor inteiro) que ele passou se aquecendo
+c) Solicite ao usuário o tempo em minutos (valor inteiro) que ele fez exercícios aeróbicos
+(correr, andar, pedalar etc)
+d) Solicite ao usuário o tempo em minutos (valor inteiro) que ele fez exercícios de
+musculação
+e) Calcule quantas calorias o Jorge perdeu, sendo que: * cada minuto de aquecimento faz perder 12 calorias
+* cada minuto de ex aeróbico faz perder 20 calorias
+* cada minuto de musculação faz perder 25 calorias
+f) Exiba, usando interpolação e apenas valores numéricos inteiros, uma frase como esta: "Olá, Jorge. Você fez um total de X minutos de exercícios e perdeu cerca de Y calorias".
