@@ -1,38 +1,67 @@
+
+
 Exercício 01 - Tabuada
 Crie uma classe chamada “Tabuada” que:
 ● Solicite um número para o usuário. ● Exiba a tabuada correspondente ao número digitado. Exemplo:
+
+
 Exercício 02 - Acerte o número
 Crie uma classe chamada “Loteria” que:
-1. Solicite um número entre 0 e 10 para o usuário. 2. Tente advinhar o número digitado através de números randômicos. 3. A cada iteração exiba o número sorteado. 4. Quando acontecer o “acerto” se a quantidade de vezes necessárias for:
-a) Até 3: exiba "Você é MUITO sortudo" b) Entre 4 e 10: exiba "Você é sortudo" c) Mais de 10: exiba "É melhor você parar de apostar e ir trabalhar"
-Linguagem de programação
-2
+1. Solicite um número entre 0 e 10 para o usuário. 
+2. Tente advinhar o número digitado através de números randômicos. 
+3. A cada iteração exiba o número sorteado. 
+4. Quando acontecer o “acerto” se a quantidade de vezes necessárias for:
+a) Até 3: exiba "Você é MUITO sortudo"
+ b) Entre 4 e 10: exiba "Você é sortudo" 
+ c) Mais de 10: exiba "É melhor você parar de apostar e ir trabalhar"
+
+
 Exercício 03 - Números pares
 Crie uma classe chamada “NúmerosPares” que:
-Exiba todos os números pares de 0 a 40 usando while. Exercício 04 - Números Ímpares
+Exiba todos os números pares de 0 a 40 usando while. 
+
+
+Exercício 04 - Números Ímpares
 Crie uma classe chamada “NúmerosImpares” que:
-Usando “for”, exiba todos os números ímpares entre 0 e 90. Exercício 05 - VariacaoContador
+Usando “for”, exiba todos os números ímpares entre 0 e 90.
+
+ Exercício 05 - VariacaoContador
 Crie uma classe chamada “ContadorVariado” que:
 Usando for, começe exibindo o valor 0.15 e depois 0.30, depois 0.45, depois 0.60... ou
 seja, aumente de 0.15 em 0.15 a cada iteração até que o último número seja
-menor que 5. Use interpolação p/ exibir o número com 2 casas decimais. Exercício 06 - Sorteio
+menor que 5. Use interpolação p/ exibir o número com 2 casas decimais. 
+
+Exercício 06 - Sorteio
 Crie uma classe chamada “Sorteio” que:
 ● Solicite um número de 1 a 100. Realize 200 sorteios. ● Ao final, exibir:
-◆ Quando o número foi sorteado (pela 1ª vez, apresente o número do sorteio). ◆ Quantos números pares foram sorteados. ◆ Quantos números ímpares foram sorteados. Exercício 07 - Acumulador
+◆ Quando o número foi sorteado (pela 1ª vez, apresente o número do sorteio). ◆ Quantos números pares foram sorteados. ◆ Quantos números ímpares foram sorteados. 
+
+
+Exercício 07 - Acumulador
 Criar uma classe chamada “Acumulador” que :
 Leia vários números até ler o número 0 e calcule a soma dos números lidos. (Não é para usar vetor).
 Linguagem de programação
 3
+
+
+
 Exercício 08 - Votação
 Foi feita uma pesquisa para saber qual o sabor de pizza favorito entre os alunos da
 Faculdade. Para votar no sabor mussarela, deve-se digitar o valor 5, Para votar no
 sabor calabresa, deve-se digitar o valor 25, Para votar no sabor quatro queijos, deve- se digitar o valor 50. Elabore um programa em Java que leia os votos de 10 alunos
 diferentes (sem usar vetor) e exiba:
-a) Quantos votos obteve cada sabor. b) Qual o sabor favorito segundo a pesquisa. Exercício 09 - Potência
+a) Quantos votos obteve cada sabor. 
+b) Qual o sabor favorito segundo a pesquisa. 
+
+
+Exercício 09 - Potência
 Elaborar um programa em Java que apresente como resultado o valor de uma
 potência de uma base qualquer elevada a um expoente qualquer, ou seja, de BE, em
 que B é o valor da base e E o valor do expoente. Considere apenas a entrada de
 valores inteiros e positivos. Por exemplo: B = 2 e E = 5. O programa deverá calcular e
 exibir o valor de 2 elevado a 5 = 32. (Não é para usar métodos que calculam a
-potência diretamente). Exercício 10 - Login
+potência diretamente).
+
+ Exercício 10 - Login
 Elaborar um programa java que simule a autenticação de um usuário em um sistema. Solicite o nome de usuário e senha. Enquanto o nome for diferente de “admin” e a senha for diferente de “#Bandtec” exiba: “Login e/ou senha inválidos” e solicite novamente. Caso o usuário digite os campos corretamente, exiba: “Login realizado com sucesso”
+
