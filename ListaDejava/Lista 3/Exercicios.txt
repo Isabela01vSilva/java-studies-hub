@@ -1,0 +1,32 @@
+Exercício 01 - Classes Sociais:
+Você foi contratado(a) para criar um software para ajudar o IBGE(Instituto Brasileiro
+de Geografia e Estatística) a identificar qual a classe social que um determinado
+entrevistado pertence através da sua renda mensal. Para exibir corretamente a classe social do indivíduo, utilize a tabela abaixo como
+referência:
+a) Crie uma classe chamada ClassesSociais. b) Solicite a renda para o usuário. c) Crie um método que calcule e devolva a quantidade de salários mínimo a
+pessoa ganha aproximadamente. d) Crie outro método que identifique e devolva qual classe a pessoa pertence. e) Exiba as informações ao final da execução, exemplo:
+Obs* considere o valor do salário mínimo: R$1.100
+Linguagem de programação
+2
+Exercício 02 - Desconto Progressivo:
+Um supermercado criou promoção onde comprando 1 produto o desconto será de
+10%, 2 produtos 20% e 3 ou mais produtos 30%. Para implementar o calculo da promoção no sistema de caixa, crie uma classe
+chamada “DescontoProgressivo”, que:
+a. Solite o valor unitário de um determinado produto e a quantidade . b. Contenha um método chamado calcularDesconto, que recebe o valor e
+quantidade, e retorna o valor final com desconto. c. Contenha um método chamado exibirNotaFiscal, que possui o seguinte
+retorno. Exemplo de saída no console:
+Linguagem de programação
+3
+Exercício 03 - Classifica idade:
+Escreva o método classificaIdade (que não retorna nada) que recebe uma idade e
+imprime uma mensagem conforme a faixa etária à qual pertence a idade conforme
+regra abaixo:
+● 0 a 2 anos - “Bebê” ● 3 a 11 anos - “Criança” ● 12 a 19 anos - “Adolescente” ● 20 a 30 anos - “Jovem” ● 31 a 60 anos - “Adulto” ● acima de 60 anos - “Idoso”. Escreva o método main que solicita que o usuário digite a sua idade, e que chama
+esse método, para testá-lo. Exercício 04 - Peso Ideal:
+Escreva o método calculaPesoIdeal, que recebe o sexo (caractere ‘M’ ou ‘F’) e a altura
+de uma pessoa (em metros). Este método deverá calcular e exibir o peso ideal dessa
+pessoa. Escreva também o método main, que solicita que o usuário digite os valores
+correspondentes a pessoas diferentes e chame o método calculaPesoIdeal para
+exibir o peso ideal de cada uma delas. A fórmula para calcular o peso ideal é:
+● Para mulheres: (62.1 * altura) – 44.7
+● Para homens: (72.7 * altura) - 58

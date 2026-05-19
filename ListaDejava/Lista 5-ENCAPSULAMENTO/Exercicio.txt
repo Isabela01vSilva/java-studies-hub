@@ -1,0 +1,27 @@
+Lista 05- Classes e Encapsulamento
+Crie um projeto chamado lista5-resolucao, e para cada exercício crie um pacote de código, assim ficará melhor organizado. Exercício 01 - Clube
+A ideia é criar uma aplicação para gerenciar a campanha de dois times de futebol. Para controlar a lógica do time em si (quantidade de vitórias, empates, derrotas e pontos), crie uma classe chamada Clube:
+a) Cada clube deverá poder:
+● Registrar vitoria
+● Registrar empate
+● Registrar derrota
+b) Sobre a pontuação:
+● Ao invocar "RegistrarVitoria()", as vitórias aumentam em 1 e os pontos em 3. ● Ao invocar "RegistrarEmpate()", os empates aumentam em 1 e os pontos em 1. ● Ao invocar "RegistrarDerrota()", as derrotas aumentam em 1. c) Crie uma classe chamada ProgramaCampeonato, ela deverá ser executável. d) Crie duas instâncias de Clube e simule diretamente no código
+as vitórias, empates e derrotas de cada clube como desejar. e) Apresente uma mensagem parcial a cada rodada do campeonato. f) Ao final exiba no console os pontos, vitorias, empates e derrotas de cada clube. Exemplo de saída no console:
+Linguagem de Programação
+2
+Exercício 02 - Calculadora
+A ideia é criar uma calculadora utilizando os conceitos de POO. Crie uma classe chamada Calculadora para gerenciar os cálculos e o resultado. a) Cada calculadora deverá poder:
+● somar
+● subtrair
+● multiplicar
+● dividir
+b) Todas operações devem considerar dois números como argumentos(parâmetros). c) Crie uma classe chamada ProgramaCalculo, ela deverá ser executável. d) Crie uma instância da classe calculadora. e) Simule no própio código todas as operações apresentando o resultado. Exemplo de sáida no console:
+Linguagem de Programação
+3
+Exercício 03 - Eleição
+Uma votação para representante da sala foi iniciada, e você ficou como responsável para
+criar uma aplicação que funcione como uma urna eletrônica. Crie uma classe chamada UrnaEltronica para gerenciar os votos e informações:
+a) Considere apenas dois candidatos. b) Cada urna deverá poder:
+● registrar voto candidato 1. ● registrar voto candidato 2. ● encerrar eleição. c) Quando a eleição for encerrada, não deverá ser computado novos votos. d) Ao final da eleição o usuário deverá ser informado quem venceu ou se ocorreu um empate. e) Crie uma classe para simular o processo de eleição chamada ProgramaEleicao, ele deverá
+ser executável. f) Crie um objeto do tipo UrnaEletronica. g) Simule votos no próprio código e exiba os resultados parciais a cada um deles. h) Encerre a eleição. i) Apresente o total de votos realizados e o resultado final no console. Exemplo de sáida no console:

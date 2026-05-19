@@ -1,0 +1,64 @@
+Lista 07- Listas e relacionamento (associação)
+Crie um projeto chamado lista7-resolucao, e para cada exercício crie um pacote de código, assim ficará melhor organizado. Exercício 01 - Frutas
+Crie um Programa em Java o qual:
+a) Tenha uma lista de frutas a qual o usuário não vê. b) Tenha uma tela (JFrame) na qual o usuário digita o nome de uma fruta e um botão
+"Pesquisar". c) Ao clicar nesse botão, o programa busca essa fruta na lista (essa busca diferencia
+maiúsculas e minúsculas). Se achar, exibe um texto abaixo com uma frase como esta:
+A fruta X existe na lista. d) Caso a fruta pesquisada não exista, exiba:
+Não existe a fruta X na lista. obs. O exercício pode ser feito com console da mesma forma. Exercício 02 - Lista de Inteiros
+Crie um programa em Java o qual:
+a) Solicite ao usuário que digite números inteiros e os adicione em uma lista, somente pare de perguntar um novo número quando o usuário digitar 0. b) Exiba somente os pares da lista. c) Exiba somente os ímpares da lista. d) Exiba a soma de todos os números da lista. e) Exiba somente o menor número da lista. f) Exiba somente o maior número da lista.
+Linguagem de Programação
+2
+Exercício 03 - Pokémon
+Crie um projeto Java o qual:
+a) Crie uma classe chamada Pokémon. ➢ atributos:
+■ nome
+■ tipo
+■ forca
+■ doces(elemento necessário para evoluir o pokemon, valor padrão é 0)
+➢ Deve conter construtor, getters, setters e toString
+b) Crie uma classe chamada TreinadorPokemon. ➢ Atributos:
+■ nome
+■ nivel (representa a experiência/nível do treinador)
+➢ Métodos:
+■ treinarPokemon: que recebe um pokemon e aumenta forca do pokemon
+em 10% além de aumentar a quantidade de doces em 10. O treinador
+também deverá ter seu nível aumentado em 2. ■ evoluirPokemon: que recebe o pokemon e o nome da evolução e realiza a
+seguinte operação:
+◆ Caso a quantidade de doces do pokemon seja superior ou igual a 50, você deverá trocar o nome atual do pokemon pelo nome passado no
+método(argumento nomeEvolucao), diminuir em 50 a quantidade de
+doces do pokemon, aumentar a experiência do treinador em 10 e exibir
+a frase “Pokémon x evoluiu para -> y”, onde x é nome “antigo” e y é o
+nome atual(depois de evoluir). ◆ Caso a quantidade de doces seja inferior, apenas exiba a frase: “Não foi
+possível realizar operação”. c) Crie uma classe Chamada TestePokemon, ela deverá ser executável:
+➢ Crie 2 instâncias de pokemon com valores diferentes e exiba no console.
+Linguagem de Programação
+3
+➢ Escolha um pokémon e treine ele no minímo 5 vezes. ➢ Logo após exiba esse pokémon no console. ➢ Tente realizar a evolução desse pokémon. ➢ exiba novamente o pokémon evolído no console. ➢ Escolha outro pokémon. ➢ Treine 2 vezes. ➢ Exiba o pokémon no console. ➢ Tente evoluir o pokémon(caso de falha). ➢ Por fim, exiba os status do treinador no console. Exercício 04 - Transportadora
+Crie um programa para gerenciar as encomendas de uma transportadora, que gere
+etiquetas para envio, e calcule o frete. Seu programa deve conter uma classe chamada Encomenda, que contenha os
+seguintes atributos:
+● altura (Ex: 5.5)
+● largura (Ex: 15.5)
+● enderecoRemetente (Ex: Rua Santos da Glória, 18)
+● enderecoDestinatario (Ex: Av Dr. Pedro, 255)
+● distancia(Ex: 42.2)
+● valorEncomenda (Ex: 87.50)
+● enviado
+Deve conter construtor, getters, setters e toString. Crie uma classe chamada Transportadora, ele deve conter:
+Atributos:
+● nome
+● envios(quantidade de envios realizados)
+● faturamento(soma dos valores do frete)
+Métodos:
+emitirEtiqueta: método privado que recebe uma encomenda e exibe as
+informações, exemplo:
+Linguagem de Programação
+4
+calcularFrete: recebe uma encomenda e calcula o frete de acordo com a distância e
+tamanho da encomenda, use a seguintes tabelas para o calculo:
+enviar: recebe uma encomenda e verifica se já foi enviada, caso não, altera o status
+da encomenda para enviado, contabiliza o envio, soma ao faturamento o valor do
+frete e por ultimo invoca o método emitirEtiqueta. Caso já tenha sido enviado, exiba uma mensagem para informar o usuário. Crie uma classe chamada TesteEnvio, crie 2 objetos do tipo encomenda e 1 do tipo
+transportadora e invoque os método para testar a lógica aplicada.

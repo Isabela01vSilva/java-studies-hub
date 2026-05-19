@@ -1,0 +1,24 @@
+Lista 06- Introdução Java Swing
+Crie um projeto chamado lista6-resolucao, e para cada exercício crie um pacote de código, assim ficará melhor organizado. Exercício 01 - Dadinhos
+Crie uma JFrame que:
+a) Tenha 1 botão "Sortear dadinhos". b) Ao clicar nele, devem ser sorteados 2 números entre 1 e 6. c) Cada número deve aparecer uma Label diferente como neste exemplo: "Dadinho 1: 5". d) Abaixo dos valores sorteados, deve aparecer uma frase como esta "O Dadinho X venceu" ou "Empate". e) Crie uma classe Dadinho que deve ser responsável por sortear um valor e disponibilizar o
+valor sorteado. Desafio:
+Melhore a tela da questão anterior de tal forma que, nela... a) Abaixo da frase citada no item “d)”, deve aparecer uma frase como esta "Vitórias do
+Dadinho 1: X / Vitórias do Dadinho 1: Y" (isso mesmo, a mesma frase com as vitórias de
+ambos). Exercício 02 - Lutadores
+Crie uma JFrame que:
+a) Tenha 2 progress bars, que representam a "vida" de 2 lutadores num jogo de luta. Ambas
+devem estar com o valor 100 logo de cara. b) Abaixo de cada progress bar devem haver 2 botões lado a lado: "Apanhar" e "Concentrar
+Força". c) Ao clicar no "Apanhar", o valor da progress bar reduz em 10. Caso ele chegue em 0, exibir
+abaixo da progress bar o texto "Lutador X perdeu" (onde X é 1 ou 2, dependendo do
+lutador que perdeu). d) Ao clicar no "Concetrar Força", o valor da progress bar aumenta em 2. Porém, esse botão
+não deve fazer nada caso o lutador já esteja sem "vida".
+Linguagem de Programação
+2
+e) Nenhum botão abaixo das progress bar deve funcionar após um dos lutadores já ter
+perdido. f) Crie uma classe Lutador que deve possuir o atributo de "vida" e os métodos de "apanhar" e "concentrarForca" e quaisquer outros que julgar necessários. Exercício 03 - Elevadores
+Crie uma JFrame que:
+a) Tenha os botões "Entrar homem", "Entrar mulher" e "Entrar criança". b) Abaixo dos botões, uma frase como esta:
+i. Total de passageiros no Elevador: 0. ii. Peso total no Elevador: 0kg. c) Ao clicar em "Entrar homem", o peso do elevador aumenta em 90kg. d) Ao clicar em "Entrar mulher", o peso do elevador aumenta em 65kg. e) Ao clicar em "Entrar criança", o peso do elevador aumenta em 40kg. f) Independente do botão clicado, o total de passageiros aumenta em 1. g) Abaixo desses 3 botões e frases deve haver uma cópia dos mesmos componentes, porém
+cada grupo de componentes corresponde a um elevador diferente. h) Para controlar a lógica do elevador em si (quantidade de pessoas, peso total, entrar
+homem, entrar mulher e entrar criança), crie uma classe chamada Elevador
