@@ -1,0 +1,50 @@
+<meta charset="UTF-8">
+<script>
+    document.write("<h3>Aula: </h3>");
+    function pulaLinha() {
+        document.write("<br>");
+        document.write("<hr>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var vitorias = parseInt(prompt("Digite o número de vitórias: "));
+    var empates = parseInt(prompt("Digite o número de empates: "));
+    var pontos = (vitorias * 3) + empates;
+    mostra("Os pontos do seu time é " + pontos);
+
+    if (pontos > 28) {
+        mostra("Seu time está melhor do que o ano passado");
+    } else if (pontos < 28) {
+        mostra("Seu time está pior do que o ano passado");
+    } else if (pontos == 28) {
+        mostra("Seu time está igual ao ano passado");
+    }
+    mostra("Fim");
+
+    document.write("<h3>Melhorando a calculadora de IMC: </h3>");
+
+    function calculaImc(peso, altura) {
+        return peso / (altura * altura);
+    }
+
+    var nome = prompt("Informe o seu nome");
+    var alturaInformada = prompt(nome + ", informe sua altura");
+    var pesoInformado = prompt(nome + ", informe seu peso");
+
+    var imc = calculaImc(pesoInformado, alturaInformada);
+
+    mostra(nome + ", o seu imc calculado é " + imc);
+
+    if (imc < 18.5) {
+        mostra("baixo");
+    } else if (imc > 35) {
+        mostra("alto");
+    } else if (imc >= 18.5 && imc <= 35) {
+        mostra("ideal");
+    }
+
+</script>

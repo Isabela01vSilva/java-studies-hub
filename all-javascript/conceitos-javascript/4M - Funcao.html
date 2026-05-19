@@ -1,0 +1,71 @@
+<meta charset = "UTF-8">
+<script>
+    document.write("<h3>Aulas: </h3>");
+
+    function mostra(frase){
+        document.write("<big>" + frase + "</big>");    
+        pulaLinha();
+    }
+
+    function pulaLinha() {
+        document.write("<br><hr><br>");
+    }
+
+    var ano = 2024;
+    mostra("Joaquim tem " + (ano - 1960) + " anos");
+    
+    mostra("Lisa tem " + (ano - 1970) + " anos");
+
+    mostra("Joelma tem " + (ano - 1980) + " anos");
+
+    document.write("<h3>Exercícios: </h3>");
+
+    function fazPegadinha() {
+        alert("Olá");
+        alert("amiga!");
+        alert("Tá");
+        alert("bastante");
+        alert("entediada?");
+        alert("Em ficar");
+        alert("Clicando em");
+        alert("Ok");
+        alert("né?");
+    }
+    //fazPegadinha();
+
+    function exibeAlerta(mensagem) {
+        document.write("***" + mensagem + "***<br>");
+    }
+
+    var idade1 = 10;
+    var idade2 = 20;
+    var idade3 = 30;
+    var totalIdades = idade1 + idade2 + idade3;
+    var mediaIdades = totalIdades/3;
+
+    exibeAlerta("Total de idades é " + totalIdades);
+    exibeAlerta("A média das idades é " +  mediaIdades);
+
+    function mostraCom(frase) {
+        document.write("**************************************************");
+        pulaLinha();
+        document.write(frase);
+        pulaLinha();
+    }   
+
+    mostraCom("BEM-VINDO AO MEU PROGRAMA");
+    mostraCom("ELE REALMENTE FUNCIONA");
+    mostraCom("EU USEI FUNÇÃO PARA FAZER ISSO");
+
+    var minhaIdade = 18;
+    var idadeIrma = 15;
+    mostra("Nossa diferença de idade é " + (minhaIdade - idadeIrma));
+    mostra("eu tenho " + minhaIdade + " e minha irmã tem: " + idadeIrma );
+
+    var idadeMediaQuandoTemFilhos = 28;
+    var anoAtual = 2024;
+    var quantidadeDeGeracoes = (anoAtual - 1500) / idadeMediaQuandoTemFilhos;
+    mostra("Quantas gerações se passaram desde 1500: ")
+    mostra(quantidadeDeGeracoes);
+
+</script>

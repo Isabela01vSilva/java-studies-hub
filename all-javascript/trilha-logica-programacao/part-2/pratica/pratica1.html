@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pratica 1</title>
+</head>
+
+<body>
+    <h1></h1>
+    <button onclick=clique()>Clique</button>
+    <button onclick=alerta()>Alerta</button>
+    <button onclick=exibirPrompt()>Prompt</button>
+    <button onclick=soma()>Soma</button>
+</body>
+
+</html>
+<script>
+    let titulo = document.querySelector('h1');
+    titulo.innerHTML = 'Hora do Desafio';
+
+    function clique() {
+        console.log("o botão foi clicado");
+    }
+
+    function alerta() {
+        alert("Amo JS");
+    }
+
+    function exibirPrompt() {
+        let cidade = prompt("Nome cidade do Brasil: ");
+        alert(`Estive em ${cidade} e lembrei de você`);
+    }
+
+    function soma() {
+        let numero1 = parseInt(prompt('Digite o primeiro número'));
+        let numero2 = parseInt(prompt('Digite o segundo número'));
+        let soma = (numero1 + numero2);
+        alert(soma);
+    }
+
+</script>
