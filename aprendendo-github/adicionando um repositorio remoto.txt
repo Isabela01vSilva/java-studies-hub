@@ -1,0 +1,30 @@
+git push = subir as mudanças para o repositório
+git pull = atualizar o projeto repositório local
+git clone link-do-projeto = clonar um repositório no computador
+git status = verificar quais arquivos foram modificados
+git add  =  adicionar as mudanças no repositório do GitHub (quando colocar ‘.’ é o todos os arquivos
+git commit -m “texto” =  registrar as mudanças no repositório 
+Dicas para fazer um commit: 
+mantenha a mensagem curta e concisa 
+uso de verbo no infinitivo
+evite detalhes técnicos
+
+git log = exibir histórico de commits
+git commit --amend -m "mensagem correta" =  para alterar o texto do último commit 
+arquivo gitignore.io = para ignorar arquivos/não subir determinados arquivos
+git reset id-do-commit = para voltar as alterações feitas 
+git revert = apagar um commit que ainda não foi 
+git reset --hard id do commit (obs: tem que ser o id do commit anterior) 
+
+
+
+Comandos git remote
+1 - git remote add apelido URL = adicionar um repositório remoto
+Apelido - nome que atribuo 
+URL - link do repositório
+2 - git remote -v  =  listar os repositor remotos
+Útil para verificar se os repositórios remotos estão configurados corretamente. (obs.: aparecerá duas linhas(tá certo)
+3 - git remote remove origin = remover um repositório remoto 
+4 - git remote set-url origin https://github.com/seu-usuario/seu-repositorio.git = alterar URL de um repositório remoto 
+5 - git remote rename origin novo-origin = Alterar o apelido de um repositório remoto:
+
