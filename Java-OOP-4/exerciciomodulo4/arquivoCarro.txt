@@ -1,0 +1,14 @@
+[
+  {
+    "marca": "Honda",
+    "modelo": "Civic",
+    "anoFabricado": 2020,
+    "preco": 11000.0
+  },
+  {
+    "marca": "Toyota",
+    "modelo": "Corolla",
+    "anoFabricado": 2022,
+    "preco": 98000.0
+  }
+]
