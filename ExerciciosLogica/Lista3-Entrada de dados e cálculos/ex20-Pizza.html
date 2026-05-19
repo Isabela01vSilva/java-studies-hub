@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Sabor da pizza <input type="text" id="saborPizza" focus> <br>
+    <select id="sabores">
+        <option value="">--ingredientes--</option>
+        <option value="queijo">Queijo</option>
+        <option value="presunto">Presunto</option>
+        <option value="ovo">Ovo</option>
+        <option value="palmito">Palmito</option>
+        <option value="frango">Frango</option>
+        <option value="catupiry">Catupiry</option>
+    </select>
+    <select id="sabores">
+        <option value="">--ingredientes--</option>
+        <option value="queijo">Queijo</option>
+        <option value="presunto">Presunto</option>
+        <option value="ovo">Ovo</option>
+        <option value="palmito">Palmito</option>
+        <option value="frango">Frango</option>
+        <option value="catupiry">Catupiry</option>
+    </select>
+    <select id="sabores">
+        <option value="">--ingredientes--</option>
+        <option value="queijo">Queijo</option>
+        <option value="presunto">Presunto</option>
+        <option value="ovo">Ovo</option>
+        <option value="palmito">Palmito</option>
+        <option value="frango">Frango</option>
+        <option value="catupiry">Catupiry</option>
+    </select>
+    <br>
+    <button onclick="calcular()">calcular preço da pizza</button> <br>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    function calcular(){
+    var escolha = (sabores.value);
+    if(escolha == queijo){
+        
+    }
+    mensagem.innerHTML = `a Pizza de ${saborPizza.value} vai custar um total de <u>R$${valor}`;
+    }
+</script>

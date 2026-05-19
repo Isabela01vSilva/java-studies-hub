@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Saldo : R$ <b id="saldo"></b><br>
+    Depositos: <b id="depositos"></b><br>
+    Saques: <b id="saques"></b><br><br>
+    <button onclick="depositar()">Depositar 100</button><button onclick="sacar()">Sacar 20</button><br>
+
+</body>
+</html>
+<script>
+    var contabancaria ={
+        valor_saldo:0,
+        valor_deposito:0,
+        valor_saques:0
+    }
+    function depositar(){
+    contabancaria.valor_saldo = contabancaria.valor_saldo + 100;
+    contabancaria.valor_deposito ++;
+    saldo.innerHTML = `${contabancaria.valor_saldo}`;
+    depositos.innerHTML = `${contabancaria.valor_deposito}`;
+    if(contabancaria.valor_saldo <= 0){
+        saldo.innerHTML = `<u style= color:red>${contabancaria.valor_saldo}</u>`;
+    }
+    else{saldo.innerHTML = `${contabancaria.valor_saldo}`;
+    }
+}
+    function sacar(){
+    contabancaria.valor_saldo = contabancaria.valor_saldo - 20;
+    contabancaria.valor_saques ++;
+    saques.innerHTML = `${contabancaria.valor_saques}`;
+    if(contabancaria.valor_saldo <= 0){
+        saldo.innerHTML = `<u style= color:red>${contabancaria.valor_saldo}</u>`;
+    }
+    else{saldo.innerHTML = `${contabancaria.valor_saldo}`;
+    }
+    }
+</script>

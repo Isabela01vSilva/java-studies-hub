@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    Quantas horas de sono você dorme <input type="text" id="dorme"> <br>
+    <button onclick="calcular()">calcular sono</button>
+    <br><div id="mensagem"></div>
+   <center><img height='560px'src="https://www.otempo.com.br/polopoly_fs/1.1329011.1534247217!httpImage/image.JPG" alt=""> </center>
+</body>
+</html>
+<script>
+    function calcular(){
+        var horas = Number(dorme.value);
+        var a = (horas *5)/100;
+        var b = (horas *45)/100;
+        var c = (horas *30)/100;
+        var d = (horas *20)/100;
+      mensagem.innerHTML+=`Ao dormir <u>${horas}</u> horas, você dormiu:<br>`;
+      mensagem.innerHTML+=`<u>${a}</u> Horas na fase 1<br>`;
+      mensagem.innerHTML+=`<u>${b}</u> Horas na fase 2<br>`;
+      mensagem.innerHTML+=`<u>${c}</u> Horas na fase 3<br>`;
+      mensagem.innerHTML+=`<u>${d}</u> Horas na fase REM<br>`;
+    }
+</script>

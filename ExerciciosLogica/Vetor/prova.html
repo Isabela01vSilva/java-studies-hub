@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    informe o nome do astronauta <input type="text" id="campo_nome"><br>
+    informe quantidade de dias <input type="text" id="campo_dias"><br>
+    informe a quantidade de horas <input type="text" id="campo_horas"><br>
+    informe a quantidade de minutos <input type="text" id="campo_minutos"><br>
+    <button onclick="analisar()">Registrar viajem</button><br>
+    <button onclick="relatorio()">relatorio</button>
+    <div id="mensag"></div><br>
+    <div id="mensagens"></div>
+</body>
+</html>
+<script>
+    let viagens = []
+    function analisar(){
+        if(campo_dias.value > 0 || campo_horas.value > 0 || campo_minutos.value > 0){
+             viagens.push ({
+                nome : campo_nome.value,
+                dias : Number(campo_dias.value),
+                horas : Number( campo_horas.value),
+                minutos : Number(campo_minutos.value)
+            })
+        }
+        else{
+            mensag.innerHTML = "informe um tempo valido";
+        }
+    }
+    function relatorio(){
+        var conta = 0;
+        var tamanho = viagens.length; 
+        mensagens.innerHTML = "";
+        for(var container = 0 ; container < viagens.length ; container ++){
+        conta = Math.trunc(((viagens[container].minutos)+(viagens[container].horas * 60)+(viagens[container].dias * 1440) * 120)/525600);
+       
+        mensag.innerHTML = `Qunatidade de viagens cadastradas:<u> ${viagens.length}</u><br>`;
+        mensagens.innerHTML += `
+        viages ${container+1}<br>
+        astronauta ${viagens[container].nome} ficou forapelo menos ${conta} anos no temo da terra <br> ` 
+        
+        if(){
+            
+        }
+        }
+
+    }
+</script>

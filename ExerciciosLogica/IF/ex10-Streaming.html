@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Informar a serie(SITCOM) que assitiu <input type="text" id="SerieAssistida"><br>
+    Número de episodios assistido <input type="text" id="EpisodioAssistido"><br>
+    <button onclick="verificar()"> Verificar nível</button> <br>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    function verificar(){
+        var serie = (SerieAssistida.value);
+        var episodios = ((Number(EpisodioAssistido.value)) * 22)/60;
+        if(episodios >= 30){
+        mensagem.innerHTML = `Vejo que você gosta da série ${episodios.toFixed(2)}<br>`;
+        mensagem.innerHTML+=`Uau, você realmente gosta dessa série!`;
+    }
+    else {
+        mensagem.innerHTML = `Vejo que você gosta da série ${episodios.toFixed(2)}`;
+    }
+    }
+</script>

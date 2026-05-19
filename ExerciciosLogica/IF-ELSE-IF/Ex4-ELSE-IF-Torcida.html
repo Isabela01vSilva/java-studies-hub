@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Times do Estado de São Paulo</title>
+</head>
+<body>
+    <select id="escolha" onclick="times()">
+    <option value="fale">Fale sobre esse time</option>
+    <option value="crt">Corinthians</option>
+    <option value="plm">Palmeiras</option>
+    <option value="snt">Santos</option>
+    <option value="sp">São paulo</option>
+    </select><br>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    function times(){
+        if(escolha.value == "crt"){
+            mensagem.innerHTML = `<span style=background-color:black;color:white>Salve o Corinthians</span> `;
+        }else if(escolha.value == "plm"){
+            mensagem.innerHTML = `<span style=background-color:green;color:white>Salve o alviverde imponente</span> `;
+        }else if(escolha.value == "snt"){
+            mensagem.innerHTML = `Agora que dá a bola é o Santos`;
+        }else if(escolha.value == "sp"){
+            mensagem.innerHTML = `<span style=background-color:black;color:red>Salve o Tricolor paulista</span> `;
+        }
+    }
+</script>

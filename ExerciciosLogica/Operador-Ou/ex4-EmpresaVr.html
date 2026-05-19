@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Digite o nome da empresa <input type="text" id="nomeempresa"><br>
+    Digite o valor da bolsa da empresa <input type="text" id="valorbolsa"><br>
+    Digite o valor do VR <input type="text" id="valorvr"><br>
+    Digite o tempo de descolamento da empresa para a Bandtec <input type="text" id="tempodistancia"><br>
+    <button onclick="preferida()">é preferida?</button><br>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    function preferida(){
+        if(valorbolsa.value <= "1800"  ||  valorvr.value >= "20" || tempodistancia.value <= "30"){
+            mensagem.innerHTML= `A empresa <b>${nomeempresa.value}</b> é uma de suas preferencias`;
+        }else{
+            mensagem.innerHTML= `A empresa <b>${nomeempresa.value}</b> está fora da sua lista`;    
+        }if(valorbolsa.value == "" || valorvr.value =="" || tempodistancia.value == "" || nomeempresa.value == ""){
+            mensagem.innerHTML= `Preencha todos os campos`;
+        }
+    }
+</script>

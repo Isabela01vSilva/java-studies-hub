@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="jogar()">Jogar</button><br>
+    <img src="" alt="" id="imgjogar" width="200px">
+</body>
+</html>
+<script>
+    var resul
+    function jogar(){
+        resul = Math.trunc(Math.random()*4);
+     if(resul == 1){
+         imgjogar.src="https://static.dicionariodesimbolos.com.br/upload/a0/a0/pedra-bruta-1_xl.jpeg";
+     }else if(resul == 2){
+         imgjogar.src="https://d26lpennugtm8s.cloudfront.net/stores/591/678/products/papel-a41-448f10c2c08c86bba915401409544690-1024-1024.jpg";
+     }else if(resul == 3){
+         imgjogar.src="https://cdn.dooca.store/24/products/tesoura-para-bordado-5-supercortextracort-tramontina-1_620x620+fill_ffffff.jpg?v=1565625629&webp=0";
+     }
+    }
+</script>

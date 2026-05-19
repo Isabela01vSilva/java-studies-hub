@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando média</title>
+</head>
+<body>
+    Digite a primeira nota <input type="text" id="n1"> <br>
+    Digite a segunda nota <input type="text" id="n2"> <br>
+    <button onclick="calculando()">Calculando média</button> <br>
+    <div id="mensagem"></div>
+    
+</body>
+</html>
+<script>
+    function calculando(){
+        var resul = ((n1.value)*(n2.value))/2;
+        mensagem.innerHTML=` Sua média foi de ${resul.toFixed(1)}`;
+    }
+</script>

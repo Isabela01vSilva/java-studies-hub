@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Será que tenho direito ?</title>
+</head>
+<body>
+  Digite o valor da sua Renda:<input type="text" id="renda"> <br>
+  Digite a renda total da familia <input type="text" id="familia"><br>
+  <button onclick="ajuda()">Verificar Ajuda</button>
+</body>
+</html>
+<script>
+    function ajuda(){
+        if(renda.value <= 1050 & familia.value<=2100){
+            alert("Você terá direito!");
+        }
+        else {
+            alert("Você NÃO terá direito");
+        }
+    }
+</script>

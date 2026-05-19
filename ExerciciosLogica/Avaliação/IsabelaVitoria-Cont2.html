@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CADEIRAMOR</title>
+</head>
+<body>
+    Loja<input type="text" id="campo1"><br>
+    Conta<input type="text" id="campo2"><br>
+    Digito<input type="text" id="campo3"><br>
+    <button onclick="Conferir()">Conferir</button><br>
+    <div id="mensagem"></div><br>
+    <div style="display: none;" id="campoEntrada">
+    <input type="password"  id="campo4"><br>
+    <button onclick="limpar()">Limpar</button><button onclick="Entrar()">Entrar</button><br>
+    <div id="mensagem1"></div>
+</div>
+</body>
+</html>
+<script>
+    var loja = Number(campo1.value);
+    var conta = Number(campo2.value);
+    var divisão = (conta/loja);
+    var digito = Number(campo3.value);
+    var senha = (campo4.value);
+    
+    function Conferir(){
+    if (loja >= 1 && loja <= 10) {
+        alert("Loja Valida");
+    }
+    else{
+        alert("Loja Invalida");
+    }
+    if(conta <= 0){
+        alert("Conta invalida") ;
+    }
+    if(divisão < 3 && digito == 1){ 
+        campo1.value='';campo2.value='';campo3.value='';
+        mensagem.innerHTML="Olá cliente entre com a sua senha"
+        campoEntrada.style.display="block";
+    }
+    else if(divisão >=3 || divisao < 6 && digito == 2){
+        campo1.value='';campo2.value='';campo3.value='';
+        mensagem.innerHTML="Olá cliente entre com a sua senha"
+        campoEntrada.style.display="block";
+    }
+    else if(divisão >= 6 && digito == 3){
+        campo1.value='';campo2.value='';campo3.value='';
+        mensagem.innerHTML="Olá cliente entre com a sua senha"
+        campoEntrada.style.display="block";
+    }
+    else {
+    alert("Digito invalido");
+    }
+    }
+    function limpar(){
+        campo4.value ="";
+    }
+    function entrar(){
+    if(senha == "recife" && digito == 1){
+
+    }
+    else if(senha == "manaus" && digito == 4){
+
+   }
+   else if(senha == "fortaleza" && digito == 3){
+
+   }else {
+       mensagem2.innerHTML += "Senha incorreta";
+   }
+}
+
+</script>

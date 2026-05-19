@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Digite sua senha <input type="text" id="senha" onkeyup="analisar_textos()"><br>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    function analisar_textos(){
+        var campo_senha = senha.value;
+        while(campo_senha.toUpperCase().indexOf('A') != -1 || campo_senha.toUpperCase().indexOf('E') != -1){
+        campo_senha =  campo_senha.replace('a','@');
+        campo_senha =  campo_senha.replace('A','@');
+        campo_senha =  campo_senha.replace('e','3');
+        campo_senha =  campo_senha.replace('E','3');
+
+        mensagem.innerHTML = `${campo_senha}`;
+         }
+    }
+</script>

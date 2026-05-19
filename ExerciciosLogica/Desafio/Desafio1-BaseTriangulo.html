@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base do triangulo</title>
+</head>
+<body>
+    <input type="text" id="baseinformada"><br>
+    <button onclick="calcular()">Calcular bases</button> <br>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    function calcular(){
+    var base = (baseinformada.value);
+    var alTri = (base * base)-1;
+    var triangulo = (base * alTri)/2;
+    var lado1 = (triangulo * 3)+1;
+    var lado2 = (alTri * 2)+1;
+    var retangulo = lado1 * lado2;
+
+    mensagem.innerHTML= `<span style=background-color:green;>A área verde é de <b><u>${base}m2</u></b></span>, 
+    <span style=color:yellow>pois o triangulo tem área de<b><u> ${triangulo}m2</u></b></span> e o 
+    <span style=color:green> retanglo tem area de <b>${retangulo}m2</b></span>`;
+    }
+</script>

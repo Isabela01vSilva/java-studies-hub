@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Informe a temperatura atual <input type="text" id="tempAtual"> <br>
+    <button onclick="analisar()">Analisar Temperatura</button> <br>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    function analisar(){
+        if(tempAtual.value >= 22){
+            if(tempAtual.value <= 23){
+        mensagem.innerHTML=`Temperatura confortável`;
+        }
+        }
+        if(tempAtual.value < 22){
+        mensagem.innerHTML=`Temperatura desconfortável - está frio!`;
+        }
+        if(tempAtual.value > 23){
+        mensagem.innerHTML=`Temperatura desconfortável - está calor!`;
+        }
+    }
+</script>

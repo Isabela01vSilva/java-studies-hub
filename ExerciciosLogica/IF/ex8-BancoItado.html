@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    O saldo da conta <input type="text" id="SaldoConta"><br>
+    O valor do débito <input type="text" id="ValorDepito"><br>
+    <button onclick="conta()">Analisar conta</button><br>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    function conta(){
+        var saldo = Number(SaldoConta.value);
+        var depito = Number(ValorDepito.value);
+        var total = saldo - depito;
+        if(total < 0){
+            mensagem.innerHTML=`<b style=color:red>o saldo atual da conta corrente é ${total.toFixed(2)}</b>`;
+        }
+        else{
+            mensagem.innerHTML=`O saldo atual é:${total.toFixed(2)}`;
+        }
+    }
+</script>

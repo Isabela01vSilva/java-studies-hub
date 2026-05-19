@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="jogador1()">Jogador 1 jogar dadinho</button><br>
+    <div id="mensagem1"></div><br>
+    <button onclick="jogador2()">Jogador 2 jogar dadinho</button><br>
+    <div id="mensagem2"></div><br>
+    <div id="resultado"></div>
+</body>
+</html>
+<script>
+    var resul1;
+    var resul2;
+    function jogador1(){
+    resul1 = Math.trunc(Math.random() * 7);
+    mensagem1.innerHTML=`${resul1}`;
+    if(resul1 == resul2){
+     resultado.innerHTML = "Empate";
+    }else if(resul1 >= resul2){
+     resultado.innerHTML = "Jogador 1 Ganhou";
+    }
+    else if(resul1 <= resul2){
+     resultado.innerHTML = "Jogador 2 Ganhou";
+    }
+    }
+    function jogador2(){
+    resul2 = Math.trunc(Math.random() * 7);
+    mensagem2.innerHTML=`${resul2}`; 
+
+    if(resul1 == resul2){
+     resultado.innerHTML = "Empate";
+    }else if(resul1 >= resul2){
+     resultado.innerHTML = "Jogador 1 Ganhou";
+    }
+    else if(resul1 <= resul2){
+     resultado.innerHTML = "Jogador 2 Ganhou";
+    }
+    }
+    
+</script>

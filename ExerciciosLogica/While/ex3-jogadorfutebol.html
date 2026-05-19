@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Qual o nome time que você acha bom? <input type="text" id="time1"><br>
+    Qual o nome time que você acha ruim? <input type="text" id="time2"><br>
+    <button onclick="realidade()">Repetir a realidade</button><br>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    function realidade(){
+        var contador = 0;
+        mensagem.innerHTML = '';
+        while (contador < 10) {
+            contador++;
+            mensagem.innerHTML += `<b>${time1.value}</b> é melhor do que <b>${time2.value}</b><br>`;
+        }
+    }
+</script>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Digite um email <input type="text" id="email" onkeyup="analisar_textos()"><br>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    function analisar_textos(){
+        mensagem.innerHTML = '';
+        var campo_email = email.value;
+       if( campo_email.includes('@') >= 1){
+        mensagem.innerHTML = 'Email valido';
+       }
+       else{
+        mensagem.innerHTML = 'Email invalido';
+       }
+    }
+</script>

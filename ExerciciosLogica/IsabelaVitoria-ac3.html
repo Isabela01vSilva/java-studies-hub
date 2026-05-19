@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boi</title>
+</head>
+<body>
+    Entre com o nome da Fazenda: <input type="text" id="campo_nomefazenda"><br>
+    Entre com a Quantidade de Vitelos: <input type="text" id="qtds_vitelo"><br>
+    Entre com a Quantidade de Novilhos: <input type="text" id="qtds_novilhos"><br>
+    Entre com a Quantidade de Bois: <input type="text" id="qtds_bois"><br>
+    <button onclick="cadastrar()">Cadastrar</button> <button onclick="analisar()">Analisar</button><br>
+    <div id="mensagem"></div> <br>
+    <br><div id="mensagem_informacoes"></div>
+</body>
+</html>
+<script>
+    let informacao = [];
+    let estimado = [];
+    var animal = 0;
+    function cadastrar(){
+         
+    if(campo_nomefazenda.value == "" ){
+         alert("Preencher corretamente a Fazenda");
+         campo_nomefazenda.focus();;
+         
+    }
+    else if(qtds_vitelo.value > 0 || qtds_novilhos.value > 0 || qtds_bois.value > 0){
+         informacao.push ({
+             nomefazenda : campo_nomefazenda.value,
+             vitelo : Number(qtds_vitelo.value),
+             novilhos : Number(qtds_novilhos.value),
+             bois : Number(qtds_bois.value)
+         });
+         campo_nomefazenda.value="";
+         qtds_vitelo.value= "";
+         qtds_novilhos.value = "";
+         qtds_bois.value = "";
+     }
+     else{
+          alert("Informar a quantidade de animais corretamente");
+     }
+    }
+    function analisar(){
+        let coeficiente = 0;
+        mensagem.innerHTML = "";
+        mensagem_informacoes.innerHTML = "";
+        /* for(var contador = 0 ; contador < informacao.length ; contador ++){
+        estimado.push(peso_estimado) 
+        coeficiente = (peso_estimado + informacao)/ informacao.length;
+        } */
+        if(informacao.length == 0){
+            alert("Favor cadastrar todas as Fazendas com os seus animais")
+        }
+        for(var conta = 0 ; conta < informacao.length ; conta ++){
+        var peso_estimado = (informacao[conta].vitelo * 100) + (informacao[conta].novilhos * 300)+ (informacao[conta].bois * 500);
+        if(informacao[conta].vitelo > informacao[conta].novilhos || informacao[conta].vitelo > informacao[conta].bois ){
+        mensagem.innerHTML += `
+         <br>A Fazenda <b>${informacao[conta].nomefazenda}</b> tem: ${informacao[conta].vitelo} vitelo,
+         ${informacao[conta].novilhos} Novilhos e ${informacao[conta].bois} Bois
+         , sendo o peso estimado desses animais = ${peso_estimado}kg.<br> 
+         <img src=https://www.comprerural.com/wp-content/uploads/2020/02/produ%C3%A7%C3%A3o-de-vitelo.jpg style= width:60px>`; 
+        } 
+        else if(informacao[conta].vitelo < informacao[conta].novilhos ||  informacao[conta].bois < informacao[conta].novilhos){
+        
+        mensagem.innerHTML += `
+         <br>A Fazenda <b>${informacao[conta].nomefazenda}</b> tem: ${informacao[conta].vitelo} vitelo,
+         ${informacao[conta].novilhos} Novilhos e ${informacao[conta].bois} Bois
+         , sendo o peso estimado desses animais = ${peso_estimado}kg.<br>
+          <img src=https://lh3.googleusercontent.com/proxy/dmvfyiihKNG3_aCx8oDuvmBAdZAuTYdTRZADDFNwvAAUEOJJlzVbNgZXX26C7xHgoJl0y3wWMtiOXsrqHoAKOKsFntGYWiWLrdSnqzLS-Kf9i9_a4SupOBUyvQ6QAD8vCA style= width:60px>`;
+         }  
+        else if(informacao[conta].bois > informacao[conta].vitelo ||  informacao[conta].bois > informacao[conta].novilhos){
+         
+         mensagem.innerHTML += `
+         <br>A Fazenda <b>${informacao[conta].nomefazenda}</b> tem: ${informacao[conta].vitelo} vitelo,
+         ${informacao[conta].novilhos} Novilhos e ${informacao[conta].bois} Bois
+         , sendo o peso estimado desses animais = ${peso_estimado}kg.<br> 
+          <img src=https://www.girodoboi.com.br/wp-content/uploads/2019/09/perfil-touro-moderno-gado-de-corte.jpg style= width:60px>`;
+          }
+        mensagem_informacoes.innerHTML =`
+        COEFICIENTE DE ANÁLISE = ${coeficiente}<br>
+        TOTAL DE FAZENDAS CADASTRADAS = ${informacao.length}<br>
+        TOTAL DE FAZENDAS LISTADAS = ${informacao[conta]}<br>
+        TOTAL GERAL DE VITELOS = ${informacao[conta].vitelo + informacao[conta].vitelo}<br>
+        TOTAL GERAL DE NOVILHOS =${informacao[conta].novilhos + informacao[conta].novilhos}<br>
+        TOTAL GERAL DE BOIS  = ${informacao[conta].bois + informacao[conta].bois}<br>  
+        `;
+    }     
+       
+}
+</script>

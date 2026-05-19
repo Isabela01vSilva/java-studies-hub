@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Digite o tempo, em anos, que ele trabalhou para o pai da pretendente   <input type="text" id="tempo"><br>
+    Digite a quantidade, em kilos, de trigo, que suas plantações renderam <input type="text"  id="renda"><br>
+    Digite a quantidade em dias que ele falou ao trabalho por estar doente <input type="text" id="doente"><br>
+    <button onclick="math()">Deu match?</button><br>
+    <div id="mensagem"></div><br>
+    <img src="" id="img" width="450px">
+</body>
+</html>
+<script>
+    function math(){
+        if(tempo.value >= 5 && renda.value >= 300 && doente.value <= 5){
+            mensagem.innerHTML="Minha filha será sua!<br>";
+            img.src="https://asset2.zankyou.com/images/card-main/c95/99c9/550/475/w/22231/-/1571082575.jpg";
+        }
+        else {
+            mensagem.innerHTML="Deu ruim! Trabalhe mais 2 anos<br>";
+            img.src="https://img.freepik.com/fotos-gratis/bravo-pai-gritando-com-uma-crianca_102671-3419.jpg?size=626&ext=jpg";
+        }
+    }
+</script>

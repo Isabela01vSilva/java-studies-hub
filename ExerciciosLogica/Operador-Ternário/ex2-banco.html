@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    O Saldo da conta: <input type="text" id="saldo"><br>
+    O Valor do débito: <input type="text" id="debito"><br>
+   <button onclick="analisar()">Analisar conta</button><br>
+   <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    function analisar(){
+        var conta = (saldo.value)-(debito.value);
+        conta >= 0 ? mensagem.innerHTML=`o saldo atual da conta corrente é ${conta.toFixed(2)}` : mensagem.innerHTML=`<span style=color:red>o saldo atual da conta corrente é ${conta.toFixed(2)}</span>`;
+        if(saldo.value == "" || debito.value == "" ){
+            mensagem.innerHTML="Preencha os campos";
+        }
+    }
+</script>

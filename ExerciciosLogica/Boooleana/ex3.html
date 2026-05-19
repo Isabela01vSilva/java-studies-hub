@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Digite sua nota <input type="text" id="nota_dig"><br>
+    Digite sua frequencia <input type="text" id="freq_dig"><br>
+    <button onclick="avaliar()">Avaliar</button><br>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    function avaliar(){
+        var nota = nota_dig.value >= 6;
+        var freq = freq_dig.value >= 75;
+        if(nota && freq){
+            mensagem.innerHTML = "Parabens,aprovado";
+        }
+        else if(!freq && !nota){
+            mensagem.innerHTML = 'Reprovado por frequencia<br>Reprovado por nota!<br>'
+        }
+        else if(!freq){
+            mensagem.innerHTML = 'Reprovado por frequencia<br>'
+        }
+        else if(!nota){
+            mensagem.innerHTML = 'Reprovado por nota!<br>'
+        }
+    }
+</script>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Digite a primeira nota: <input type="text" id="n1"><br>
+    Digite a segunda nota: <input type="text" id="n2"><br>
+    <button onclick="verificar()">Verificar resultado</button><br>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    function verificar(){
+        var conta = (Number(n2.value) + Number(n1.value))/2;
+        conta < 6  ? mensagem.innerHTML="Infelizmente reprovado" : conta >= 6 && conta < 7.5 ? mensagem.innerHTML = "Aprovado-Automação,Seg ou Testes" : mensagem.innerHTML = "aprovado-dev";
+        mensagem.innerHTML +=`<br>${conta}`;
+}
+</script>

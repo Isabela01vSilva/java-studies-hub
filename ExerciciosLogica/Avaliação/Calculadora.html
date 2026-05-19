@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Manipulando todo o corpo da pagina */
+        body{
+            background-color: thistle;
+            font: normal 14pt Arial;
+        }
+        /* Manipulando a div que contém todo o conteudo  */
+        .conteudo{
+       position: absolute;
+       left: 30%;
+       top: 20%;
+       background-color: white;
+       width: 500px;
+       height: 300px;
+       text-align: center 
+        }
+        /* Trabalhando no tamanho dos input */
+        input{
+            width: 30px;
+        }
+        /* Sumindo com as setas dos input */
+        input[type=number]::-webkit-inner-spin-button { 
+            -webkit-appearance: none;
+         } 
+    </style>
+</head>
+<body> 
+    <!--Essa div 'conteudo' seria pra manipular tudo pelo css-->
+    <div class="conteudo">
+    <h1>Calculando Bhaskara</h1>
+    <!--esses 3 input é pro usuario informar os valores-->
+    <input type="number" id="campo1" placeholder='a'>x² +
+    <input type="number" id="campo2" placeholder="b"> x +
+    <input type="number" id="campo3" placeholder="c"> =  <br> <br>
+    <!--Button pra calcular a conta-->
+    <button onclick="calcular()">Calcular</button><br>
+    <!-- Essas div serão aonde aparecera as mensagens-->
+    <div id="div_resultado"></div>
+    <div id="div_x1"></div>
+    <div id="div_x2"></div>
+    </div>
+</body>
+</html>
+<script>
+function calcular(){
+    /* a,b,c = pegando os valores dos input */
+     a = (campo1.value);
+     b = (campo2.value);
+     c = (campo3.value);
+     /* calculando o delta*/
+     var delta = (b*b) - 4 * a * c;
+
+     /* caso o delta seja 0, aparecerar a seguinte mensagem : */
+   if (delta == 0){
+       div_resultado.innerHTML= '<span style=color:blue>O Delta é zero, portando os valores de X1 e X2 serão iguais.</span>'
+   }
+   /* caso o delta seja negativo  */
+   else if(delta < 0){
+        div_resultado.innerHTML = '<span style=color:red>Não existem raízes reais.</span>';
+    }
+    /* caso não o delta não deu a nenhuma das opçoes anteriores, começamos a fazer os calculos */
+   else{
+    /* este comando 'Math.sqrt' levara o delta a raiz ao quatrato */
+     var raizDelta = Math.sqrt(delta);
+     /* essas variavel calculara o valor dos x1 */
+     var priResul = (-b + raizDelta) /(2 * a);
+     /* essas variavel calculara o valor dos x2 */
+     var segResul =  (-b - raizDelta) /(2 * a);
+     /* a partir da linha 75 até a 79,iremos exibir/imprimir os valores da conta na página */
+      div_resultado.innerHTML = `<i>Valor de <span style=color:grey>Delta:</span> <b>${delta}</b></i><br>`;
+      div_resultado.innerHTML += `<i>Raiz de <span style=color:gold>Delta:</span><b>${raizDelta.toFixed(2)}</b></i><br>`;
+      div_x1.innerHTML = `<u>X1:<span style= color:pink>${priResul.toFixed(2)}</span></u><br>`;
+      div_x2.innerHTML = `<u>X2:<span style= color:green>${segResul.toFixed(2)}</span></u><br>`;
+}
+}
+</script>

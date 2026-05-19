@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Digite um numero da sorte <input type="text" id="number"><br>
+    <button onclick="sorte()">Testar minha sorte</button><br>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    function sorte(){
+        for(var contador = 1 ; contador <= 20 ; contador ++){
+            var sorteio = parseInt(Math.random() * 101);
+          if(number.value == sorteio){
+              mensagem.innerHTML = `Muito bem, você é uma pessoa de sorte! Seu número saiu no ${contador}º sorteio`;
+             break;
+        } 
+        else{
+            mensagem.innerHTML = "É, você não tem muita sorte em sorteios, pelo visto";
+        }
+    }
+}
+</script>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select  id="escolha">
+        <option value="nada">Qual a cor de cabelo da moça?</option>
+        <option value="pre">Preto</option>
+        <option value="ver">Vermelho</option>
+        <option value="ama">Amarelo</option>
+        <option value="cas">Castanho</option>
+    </select><br>
+Qual Altura da moça? <input type="text" id="altura"><br>
+<button onclick="match()">Deu match?</button>
+<div id="mensagem"></div>
+</body>
+</html>
+<script>
+    function match(){
+        if( altura.value >= "1,70" && escolha.value == "pre" || altura.value >= "1,70" && escolha.value == "ver" ){
+            mensagem.innerHTML= "Ze bunduia encontrou a sua quimica";
+        }else{
+            mensagem.innerHTML= 'não foi dessa vez Zé';
+        }if(escolha.value == "nada"){
+            mensagem.innerHTML = "informer uma cor de cabelo"
+        }
+    }
+</script>

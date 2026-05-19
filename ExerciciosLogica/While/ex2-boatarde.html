@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <body>
+    <button onclick="mostrar()">Diga algo sobre a quarentena</button>
+    <div id="div_msg"></div>
+</body> 
+</body>
+</html>
+<script>
+    function mostrar() {
+        var contador = 0;
+        div_msg.innerHTML = '';
+        while (contador < 7) {
+            contador++;
+            div_msg.innerHTML += `<br> ${contador}-Boa Tarde`;
+            div_msg.innerHTML += `<br>que saco ficar em casa,né?`;
+        }
+    }
+</script>

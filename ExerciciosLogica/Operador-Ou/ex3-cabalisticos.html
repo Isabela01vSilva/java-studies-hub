@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Você já clicou <b id="numero">0</b> vezes <br>
+    <button onclick="clique()">Clique cabalistico</button><br>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    var vezes = 0;
+    function clique(){
+        ++ vezes ;
+        numero.innerHTML=`${vezes}`;
+        if(vezes == "3" || vezes == "4" || vezes == "7" || vezes == "10"){
+            mensagem.innerHTML = `Você clicou <b>${vezes}</b> vezes e Juliana gosta desse número!`;
+        }else {
+            mensagem.innerHTML = "";
+        }
+    }
+</script>

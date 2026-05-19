@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="temp()">Sortear temperatura</button><br>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    var resul
+    function temp(){
+    resul = Math.trunc((Math.random() * 40) - 20 ) ;
+    mensagem.innerHTML=`Temperatura sorteada:<b>${resul}</b><br>`;
+    if(resul < 1){
+        mensagem.innerHTML+=`Dá pra conservar qualquer alimento`;   
+    }else if(resul >= 1 && resul <= 10){
+        mensagem.innerHTML+=`Conserva a maioria dos alimentos`;   
+     }else if(resul > 10){
+        mensagem.innerHTML+=`Estraga a maioria dos alimentos`;   
+    }
+}
+</script>

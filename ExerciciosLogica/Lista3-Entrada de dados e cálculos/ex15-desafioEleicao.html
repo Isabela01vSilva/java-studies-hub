@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Quantos votos teve Zé Buduia <input type="text" id="zeBuduia"> <br>
+    Quantos votos teve Maria Bigodenha <input type="text" id="mariaBigodenha"> <br>
+    Quantos votos brancos houveram <input type="text" id="brancos"> <br>
+    Quantos votos nulos houveram <input type="text" id="nulos"> <br>
+    <button onclick="resultado()">Resultado da Eleição</button><br>
+    <div id="div_resul"></div>
+    <div id="porcentagem"></div> <br>
+    <div id="porcentagem2"></div> <br>
+    <div id="porcentagem3"></div> <br>
+</body>
+</html>
+<script>
+    function resultado(){
+        var maria = Number(mariaBigodenha.value);
+        var ze = Number(zeBuduia.value);
+        var branco = Number(brancos.value);
+        var nulo = Number(nulos.value);
+
+        var total = maria+ze+branco+nulo;
+        var votosZe = (ze*100) / total;
+        var votosMaria = (maria*100) / total;
+        var invalidos = (branco + nulo);
+        var porcinvalidos = (invalidos * 100)/ total;
+        
+        div_resul.innerHTML =`Total de votos:<u>${total}</u><br>`;
+        div_resul.innerHTML +=`Zé ruela:${votosZe.toFixed(0)}% (${ze}votos)<br>`; 
+        porcentagem.style.height ="30px";
+        porcentagem.style.background = "green";
+        porcentagem.style.width = `${votosZe}%`;
+
+        div_resul.innerHTML +=`Maria bigodenha:${votosMaria.toFixed(0)}%(${maria}votos)<br>`;
+        porcentagem2.style.height +="30px";
+        porcentagem2.style.background += "red";
+        porcentagem2.style.width += `${votosMaria}%`;
+
+        div_resul.innerHTML += `Inválidos:${porcinvalidos.toFixed(0)}%(${invalidos}votos)`; 
+        porcentagem3.style.height +="30px";
+        porcentagem3.style.background += "gray";
+        porcentagem3.style.width += `${porcinvalidos}%`;
+    }
+</script>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        Digite os nomes dos seus filmes favoritos <input type="text" id="campofilme"><br>
+        <button onclick="cadastrar()">Cadastrar</button><br>
+        <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    var filme = [];
+    function cadastrar(){
+    filme.push(campofilme.value);
+    campofilme.value="";
+    mensagem.innerHTML += `${filme[filme.length-1]}<br>`;
+}
+</script>

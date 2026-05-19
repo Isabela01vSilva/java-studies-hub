@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    O valor da passagem de ônibus <input type="text" id="bus"> <br>
+    <p style="color: red;">Obs:Digite ponto:''.'' no lugar da virgula</p>
+    Quantidade de viagens que o usuario faz por mês <input type="text" id="mes"> <br>
+    <button onclick="Calculando()">Calcular VT</button>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    function Calculando(){
+        var resul = (bus.value)*(mes.value);
+        mensagem.innerHTML=`Você vai gastar <u>R$${resul.toFixed(2)}</u> por mês com ônibus`;
+    }
+</script>
